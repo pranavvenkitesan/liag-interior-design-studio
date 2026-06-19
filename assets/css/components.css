@@ -1291,3 +1291,34 @@ body.imgswap-active .imgswap-btn {
 }
 
 /* master toggle reuses customizer__dark styling */
+/* ============================================================
+   THEME TOGGLE — fixed dark/light switch, top-right corner
+   ============================================================ */
+.theme-toggle {
+  position: fixed;
+  top: 18px;
+  right: 18px;
+  z-index: 300;
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  width: 44px;
+  height: 44px;
+  border-radius: 50%;
+  border: 1px solid var(--line, rgba(0, 0, 0, 0.12));
+  background: var(--paper, #fff);
+  color: var(--text, #1b1f27);
+  cursor: pointer;
+  box-shadow: 0 6px 20px rgba(0, 0, 0, 0.12);
+  transition: transform .2s ease, background .2s ease, color .2s ease, box-shadow .2s ease;
+}
+.theme-toggle:hover {
+  transform: translateY(-2px) rotate(12deg);
+  box-shadow: 0 10px 26px rgba(0, 0, 0, 0.18);
+}
+.theme-toggle:active { transform: translateY(0) scale(0.94); }
+.theme-toggle svg { display: block; }
+
+@media (max-width: 640px) {
+  .theme-toggle { width: 40px; height: 40px; top: 12px; right: 12px; }
+}

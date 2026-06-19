@@ -818,6 +818,38 @@
   /* ---------------------------------------------------------
      19. CUSTOMIZER PANEL — live accent + dark mode (demo feature)
      --------------------------------------------------------- */
+  /* ---------------------------------------------------------
+     Theme toggle — dark / light, top-right corner, persisted
+     --------------------------------------------------------- */
+  var SUN = '<svg viewBox="0 0 24 24" width="20" height="20" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><circle cx="12" cy="12" r="4"></circle><path d="M12 2v2M12 20v2M4.93 4.93l1.41 1.41M17.66 17.66l1.41 1.41M2 12h2M20 12h2M6.34 17.66l-1.41 1.41M19.07 4.93l-1.41 1.41"></path></svg>';
+  var MOON = '<svg viewBox="0 0 24 24" width="20" height="20" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M21 12.79A9 9 0 1 1 11.21 3 7 7 0 0 0 21 12.79z"></path></svg>';
+
+  function initThemeToggle() {
+    var KEY = 'liag-theme';
+    var btn = document.createElement('button');
+    btn.className = 'theme-toggle';
+    btn.type = 'button';
+
+    function apply(dark) {
+      document.body.classList.toggle('theme-dark', dark);
+      btn.innerHTML = dark ? SUN : MOON;
+      btn.setAttribute('aria-label', dark ? 'Switch to light mode' : 'Switch to dark mode');
+      btn.setAttribute('title', dark ? 'Light mode' : 'Dark mode');
+    }
+
+    var saved;
+    try { saved = localStorage.getItem(KEY); } catch (e) { }
+    apply(saved === 'dark');
+
+    btn.addEventListener('click', function () {
+      var dark = !document.body.classList.contains('theme-dark');
+      apply(dark);
+      try { localStorage.setItem(KEY, dark ? 'dark' : 'light'); } catch (e) { }
+    });
+
+    document.body.appendChild(btn);
+  }
+
   function initCustomizer() {
     var panel = document.querySelector('[data-customizer]');
     if (!panel) return;
@@ -966,6 +998,7 @@
     initInquiry();
     initCounters();
     initCustomizer();
+    initThemeToggle();
     initAccordion();
     initImageSwap();
     var y = document.querySelector('[data-year]');
