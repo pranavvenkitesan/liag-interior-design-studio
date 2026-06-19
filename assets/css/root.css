@@ -120,8 +120,8 @@
 
 /* 01 — Interior Design Studio: soft, calm, residential */
 body.v-interior {
-  --paper: #eef2f6;
-  --paper-warm: #f6f8fb;
+  --paper: #f0ece4;
+  --paper-warm: #f6f3ec;
   --accent: var(--ochre);
   --accent-deep: var(--ochre-deep);
 }
