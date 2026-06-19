@@ -1,0 +1,67 @@
+<svg viewBox="0 0 800 1000" fill="none" xmlns="http://www.w3.org/2000/svg" role="img" aria-label="Illustrated boutique hotel suite">
+  <defs>
+    <linearGradient id="w3" x1="0" y1="0" x2="0" y2="1"><stop offset="0" stop-color="#eef2f6"/><stop offset="1" stop-color="#dde5ec"/></linearGradient>
+    <linearGradient id="hb3" x1="0" y1="0" x2="0" y2="1"><stop offset="0" stop-color="#586577"/><stop offset="1" stop-color="#46566b"/></linearGradient>
+  </defs>
+  <rect width="800" height="1000" fill="url(#w3)"/>
+  <!-- paneled accent wall behind bed -->
+  <rect x="150" y="120" width="500" height="420" fill="#dde5ec"/>
+  <line x1="275" y1="120" x2="275" y2="540" stroke="#c2cedb" stroke-width="3"/>
+  <line x1="400" y1="120" x2="400" y2="540" stroke="#c2cedb" stroke-width="3"/>
+  <line x1="525" y1="120" x2="525" y2="540" stroke="#c2cedb" stroke-width="3"/>
+  <rect y="800" width="800" height="200" fill="#c6d0dc"/>
+  <line x1="0" y1="800" x2="800" y2="800" stroke="#9fb0c2" stroke-width="2"/>
+
+  <!-- Pendant lamps -->
+  <g stroke="#1b1f27" stroke-width="2.5">
+    <line x1="230" y1="120" x2="230" y2="300"/>
+    <path d="M205 300 h50 l-10 34 h-30 z" fill="#2f6fb0"/>
+    <line x1="570" y1="120" x2="570" y2="300"/>
+    <path d="M545 300 h50 l-10 34 h-30 z" fill="#2f6fb0"/>
+  </g>
+  <ellipse cx="230" cy="320" rx="44" ry="30" fill="#2f6fb0" opacity="0.12"/>
+  <ellipse cx="570" cy="320" rx="44" ry="30" fill="#2f6fb0" opacity="0.12"/>
+
+  <!-- Headboard -->
+  <rect x="240" y="430" width="320" height="170" rx="14" fill="url(#hb3)"/>
+  <line x1="300" y1="445" x2="300" y2="585" stroke="#3c4a5e" stroke-width="3"/>
+  <line x1="400" y1="445" x2="400" y2="585" stroke="#3c4a5e" stroke-width="3"/>
+  <line x1="500" y1="445" x2="500" y2="585" stroke="#3c4a5e" stroke-width="3"/>
+
+  <!-- Bed -->
+  <g>
+    <ellipse cx="400" cy="880" rx="280" ry="48" fill="#aebbc9" opacity="0.5"/>
+    <!-- mattress base -->
+    <rect x="200" y="600" width="400" height="200" rx="16" fill="#5a6b80"/>
+    <!-- duvet -->
+    <path d="M200 660 Q400 630 600 660 V760 Q400 740 200 760 Z" fill="#dde5ec"/>
+    <rect x="200" y="740" width="400" height="60" rx="10" fill="#cdd8e3"/>
+    <!-- pillows -->
+    <rect x="240" y="610" width="120" height="70" rx="18" fill="#eef2f6" stroke="#c2cedb" stroke-width="2"/>
+    <rect x="440" y="610" width="120" height="70" rx="18" fill="#eef2f6" stroke="#c2cedb" stroke-width="2"/>
+    <rect x="330" y="690" width="140" height="50" rx="14" fill="#2f6fb0"/>
+    <!-- legs -->
+    <rect x="210" y="800" width="14" height="30" fill="#1b1f27"/>
+    <rect x="576" y="800" width="14" height="30" fill="#1b1f27"/>
+  </g>
+
+  <!-- Side tables -->
+  <g>
+    <rect x="120" y="690" width="80" height="110" fill="#46566b"/>
+    <line x1="120" y1="740" x2="200" y2="740" stroke="#586577" stroke-width="3"/>
+    <circle cx="160" cy="668" r="16" fill="#2f6fb0"/>
+    <rect x="600" y="690" width="80" height="110" fill="#46566b"/>
+    <line x1="600" y1="740" x2="680" y2="740" stroke="#586577" stroke-width="3"/>
+    <path d="M628 668 h24 l6 -28 h-36 z" fill="#2f6fb0"/>
+    <line x1="640" y1="690" x2="640" y2="668" stroke="#1b1f27" stroke-width="3"/>
+  </g>
+
+  <!-- Plant -->
+  <g>
+    <path d="M690 940 L740 940 L732 840 L698 840 Z" fill="#46566b"/>
+    <path d="M715 840 Q685 760 695 710" stroke="#2f6fb0" stroke-width="6" fill="none" stroke-linecap="round"/>
+    <path d="M715 840 Q748 770 740 720" stroke="#586577" stroke-width="6" fill="none" stroke-linecap="round"/>
+    <ellipse cx="695" cy="700" rx="18" ry="34" fill="#2f6fb0" opacity="0.85" transform="rotate(-22 695 700)"/>
+    <ellipse cx="740" cy="712" rx="18" ry="34" fill="#586577" opacity="0.85" transform="rotate(22 740 712)"/>
+  </g>
+</svg>

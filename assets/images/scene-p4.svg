@@ -1,0 +1,64 @@
+<svg viewBox="0 0 800 1000" fill="none" xmlns="http://www.w3.org/2000/svg" role="img" aria-label="Illustrated dining space">
+  <defs>
+    <linearGradient id="w4" x1="0" y1="0" x2="0" y2="1"><stop offset="0" stop-color="#eef2f6"/><stop offset="1" stop-color="#dde5ec"/></linearGradient>
+    <linearGradient id="f4" x1="0" y1="0" x2="0" y2="1"><stop offset="0" stop-color="#cfd8e2"/><stop offset="1" stop-color="#b7c3d0"/></linearGradient>
+  </defs>
+  <rect width="800" height="1000" fill="url(#w4)"/>
+  <rect y="770" width="800" height="230" fill="url(#f4)"/>
+  <line x1="0" y1="770" x2="800" y2="770" stroke="#9fb0c2" stroke-width="2"/>
+
+  <!-- Large framed art -->
+  <rect x="120" y="150" width="240" height="300" fill="#eef2f6" stroke="#1b1f27" stroke-width="3"/>
+  <path d="M140 430 L200 320 L250 380 L300 280 L340 430 Z" fill="#2f6fb0" opacity="0.45"/>
+  <circle cx="305" cy="250" r="18" fill="#2f6fb0"/>
+
+  <!-- Pendant light over table -->
+  <g stroke="#1b1f27" stroke-width="2.5">
+    <line x1="500" y1="120" x2="500" y2="250"/>
+    <path d="M455 250 h90 l-20 50 h-50 z" fill="#2f6fb0"/>
+  </g>
+  <ellipse cx="500" cy="320" rx="80" ry="46" fill="#2f6fb0" opacity="0.14"/>
+
+  <!-- Sideboard (right) -->
+  <g>
+    <rect x="560" y="520" width="200" height="120" fill="#46566b"/>
+    <line x1="660" y1="520" x2="660" y2="640" stroke="#3c4a5e" stroke-width="3"/>
+    <circle cx="640" cy="580" r="5" fill="#b2c2d1"/>
+    <circle cx="680" cy="580" r="5" fill="#b2c2d1"/>
+    <rect x="566" y="640" width="14" height="30" fill="#1b1f27"/>
+    <rect x="740" y="640" width="14" height="30" fill="#1b1f27"/>
+    <!-- objects on top -->
+    <path d="M600 520 q-4 -34 8 -54 q12 20 8 54 z" fill="#2f6fb0"/>
+    <rect x="690" y="486" width="36" height="34" fill="#586577"/>
+  </g>
+
+  <!-- Dining table -->
+  <g>
+    <ellipse cx="430" cy="720" rx="240" ry="50" fill="#5a6b80"/>
+    <ellipse cx="430" cy="706" rx="240" ry="50" fill="#6a7a90"/>
+    <rect x="320" y="720" width="12" height="120" fill="#46566b"/>
+    <rect x="528" y="720" width="12" height="120" fill="#46566b"/>
+    <!-- centerpiece -->
+    <path d="M415 706 q-6 -40 10 -64 q16 24 10 64 z" fill="#2f6fb0"/>
+  </g>
+
+  <!-- Chairs -->
+  <g fill="#586577">
+    <rect x="250" y="640" width="70" height="90" rx="12"/>
+    <rect x="258" y="730" width="54" height="110" rx="8" fill="#46566b"/>
+    <rect x="540" y="640" width="70" height="90" rx="12"/>
+    <rect x="548" y="730" width="54" height="110" rx="8" fill="#46566b"/>
+  </g>
+  <ellipse cx="430" cy="880" rx="280" ry="46" fill="#b2c2d1" opacity="0.45"/>
+
+  <!-- Plant left foreground -->
+  <g>
+    <path d="M90 960 L140 960 L132 850 L98 850 Z" fill="#46566b"/>
+    <path d="M115 850 Q82 760 92 700" stroke="#2f6fb0" stroke-width="6" fill="none" stroke-linecap="round"/>
+    <path d="M115 850 Q148 770 140 712" stroke="#586577" stroke-width="6" fill="none" stroke-linecap="round"/>
+    <path d="M115 850 Q113 775 117 716" stroke="#5a6b80" stroke-width="6" fill="none" stroke-linecap="round"/>
+    <ellipse cx="92" cy="690" rx="20" ry="38" fill="#2f6fb0" opacity="0.85" transform="rotate(-25 92 690)"/>
+    <ellipse cx="140" cy="702" rx="20" ry="38" fill="#586577" opacity="0.85" transform="rotate(22 140 702)"/>
+    <ellipse cx="117" cy="710" rx="18" ry="34" fill="#5a6b80" opacity="0.85"/>
+  </g>
+</svg>

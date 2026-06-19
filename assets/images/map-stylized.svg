@@ -1,0 +1,18 @@
+<svg viewBox="0 0 1400 460" fill="none" xmlns="http://www.w3.org/2000/svg" preserveAspectRatio="xMidYMid slice" role="img" aria-label="Map showing studio location">
+<rect width="1400" height="460" fill="#e4ddd0"/>
+<!-- blocks (city grid) -->
+<g fill="#d8d0c0">
+<rect x="40" y="40" width="180" height="120"/><rect x="250" y="40" width="240" height="80"/><rect x="520" y="40" width="160" height="140"/>
+<rect x="720" y="60" width="200" height="100"/><rect x="960" y="40" width="180" height="120"/><rect x="1180" y="60" width="180" height="90"/>
+<rect x="60" y="200" width="140" height="160"/><rect x="240" y="160" width="200" height="120"/><rect x="800" y="200" width="160" height="140"/>
+<rect x="1000" y="200" width="200" height="120"/><rect x="1240" y="190" width="120" height="180"/>
+<rect x="100" y="400" width="220" height="60"/><rect x="500" y="320" width="180" height="140"/><rect x="900" y="380" width="240" height="80"/>
+</g>
+<!-- roads -->
+<g stroke="#cfc6b4" stroke-width="14">
+<line x1="0" y1="185" x2="1400" y2="175"/><line x1="0" y1="300" x2="1400" y2="310"/>
+<line x1="475" y1="0" x2="495" y2="460"/><line x1="950" y1="0" x2="940" y2="460"/>
+</g>
+<!-- accent road to pin -->
+<path d="M495 175 L620 230 L700 215" stroke="#9c6b43" stroke-width="4" stroke-dasharray="2 8" opacity="0.6" fill="none"/>
+</svg>

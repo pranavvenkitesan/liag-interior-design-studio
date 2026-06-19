@@ -1,0 +1,123 @@
+<svg viewBox="0 0 1000 1200" fill="none" xmlns="http://www.w3.org/2000/svg" role="img" aria-label="Architectural rendering of a modern building">
+  <defs>
+    <linearGradient id="sky2" x1="0" y1="0" x2="0" y2="1">
+      <stop offset="0" stop-color="#f3ece1"/>
+      <stop offset="1" stop-color="#e7dccb"/>
+    </linearGradient>
+    <linearGradient id="faceLight" x1="0" y1="0" x2="0" y2="1">
+      <stop offset="0" stop-color="#e9dcc7"/>
+      <stop offset="1" stop-color="#d4c0a2"/>
+    </linearGradient>
+    <linearGradient id="faceMid" x1="0" y1="0" x2="0" y2="1">
+      <stop offset="0" stop-color="#b8966a"/>
+      <stop offset="1" stop-color="#9a774d"/>
+    </linearGradient>
+    <linearGradient id="faceDark" x1="0" y1="0" x2="0" y2="1">
+      <stop offset="0" stop-color="#6b5640"/>
+      <stop offset="1" stop-color="#4a3a2a"/>
+    </linearGradient>
+    <linearGradient id="glassCool" x1="0" y1="0" x2="1" y2="1">
+      <stop offset="0" stop-color="#cdbfa8"/>
+      <stop offset="0.5" stop-color="#a98860"/>
+      <stop offset="1" stop-color="#8c6d49"/>
+    </linearGradient>
+  </defs>
+
+  <rect width="1000" height="1200" fill="url(#sky2)"/>
+
+  <!-- subtle sun wash -->
+  <circle cx="760" cy="240" r="300" fill="#ffffff" opacity="0.25"/>
+
+  <!-- ground -->
+  <rect y="1020" width="1000" height="180" fill="#d8c4a8"/>
+  <rect y="1020" width="1000" height="6" fill="#b89668" opacity="0.5"/>
+
+  <!-- ================= MAIN COMPOSITION: stepped modern building ================= -->
+  <!-- far slab (background, lightest) -->
+  <g>
+    <rect x="120" y="300" width="240" height="720" fill="url(#faceLight)"/>
+    <!-- vertical fins -->
+    <g stroke="#c4a878" stroke-width="2" opacity="0.7">
+      <line x1="160" y1="300" x2="160" y2="1020"/><line x1="200" y1="300" x2="200" y2="1020"/>
+      <line x1="240" y1="300" x2="240" y2="1020"/><line x1="280" y1="300" x2="280" y2="1020"/>
+      <line x1="320" y1="300" x2="320" y2="1020"/>
+    </g>
+    <!-- horizontal floor lines -->
+    <g stroke="#b89668" stroke-width="1.5" opacity="0.5">
+      <line x1="120" y1="400" x2="360" y2="400"/><line x1="120" y1="500" x2="360" y2="500"/>
+      <line x1="120" y1="600" x2="360" y2="600"/><line x1="120" y1="700" x2="360" y2="700"/>
+      <line x1="120" y1="800" x2="360" y2="800"/><line x1="120" y1="900" x2="360" y2="900"/>
+    </g>
+  </g>
+
+  <!-- main mass (mid tone, the hero volume) -->
+  <g>
+    <rect x="340" y="440" width="380" height="580" fill="url(#faceMid)"/>
+    <!-- deep shadow side (right return) -->
+    <polygon points="720,440 800,480 800,1020 720,1020" fill="url(#faceDark)"/>
+    <!-- large curtain-wall glazing grid -->
+    <rect x="380" y="500" width="300" height="480" fill="url(#glassCool)" opacity="0.9"/>
+    <g stroke="#4a3a2a" stroke-width="2.5" opacity="0.85">
+      <!-- verticals -->
+      <line x1="455" y1="500" x2="455" y2="980"/><line x1="530" y1="500" x2="530" y2="980"/><line x1="605" y1="500" x2="605" y2="980"/>
+      <!-- horizontals -->
+      <line x1="380" y1="580" x2="680" y2="580"/><line x1="380" y1="660" x2="680" y2="660"/>
+      <line x1="380" y1="740" x2="680" y2="740"/><line x1="380" y1="820" x2="680" y2="820"/><line x1="380" y1="900" x2="680" y2="900"/>
+    </g>
+    <!-- glass reflection accents -->
+    <polygon points="380,500 460,500 410,980 380,980" fill="#ffffff" opacity="0.10"/>
+    <polygon points="540,500 580,500 540,980 510,980" fill="#ffffff" opacity="0.07"/>
+    <!-- frame -->
+    <rect x="380" y="500" width="300" height="480" fill="none" stroke="#2c2218" stroke-width="3"/>
+  </g>
+
+  <!-- cantilevered top volume (clay accent band) -->
+  <g>
+    <rect x="320" y="380" width="420" height="64" fill="#2c2218"/>
+    <rect x="320" y="372" width="420" height="10" fill="#b5622f"/>
+    <!-- roof detail -->
+    <rect x="360" y="344" width="60" height="28" fill="#4a3a2a"/>
+  </g>
+
+  <!-- foreground low pavilion (darkest, closest) -->
+  <g>
+    <rect x="640" y="780" width="280" height="240" fill="url(#faceDark)"/>
+    <!-- warm-lit windows -->
+    <g fill="#e9cfa0" opacity="0.9">
+      <rect x="670" y="830" width="56" height="80"/><rect x="746" y="830" width="56" height="80"/><rect x="822" y="830" width="56" height="80"/>
+    </g>
+    <!-- one clay-lit window -->
+    <rect x="746" y="830" width="56" height="80" fill="#c87a3e" opacity="0.85"/>
+    <!-- entry portal -->
+    <rect x="730" y="940" width="70" height="80" fill="#1a140d"/>
+    <!-- roof slab -->
+    <rect x="624" y="764" width="312" height="18" fill="#2c2218"/>
+  </g>
+
+  <!-- entry plaza steps (foreground, main volume) -->
+  <g fill="#c4a878">
+    <rect x="380" y="985" width="300" height="12"/>
+    <rect x="360" y="997" width="340" height="12" fill="#b89668"/>
+    <rect x="340" y="1009" width="380" height="12" fill="#a8835c"/>
+  </g>
+
+  <!-- slender tree (architectural landscape) -->
+  <g>
+    <line x1="70" y1="1020" x2="70" y2="860" stroke="#4a3a2a" stroke-width="5" stroke-linecap="round"/>
+    <ellipse cx="70" cy="820" rx="46" ry="64" fill="#7a6047" opacity="0.6"/>
+    <ellipse cx="70" cy="820" rx="30" ry="44" fill="#9a774d" opacity="0.5"/>
+  </g>
+
+  <!-- human figures for scale (architectural convention, very simple) -->
+  <g fill="#2c2218" opacity="0.55">
+    <rect x="470" y="980" width="7" height="36" rx="3"/><circle cx="473.5" cy="976" r="5"/>
+    <rect x="500" y="982" width="7" height="34" rx="3"/><circle cx="503.5" cy="978" r="5"/>
+  </g>
+
+  <!-- fine dimension annotation (top) -->
+  <g stroke="#9a774d" stroke-width="1.5" opacity="0.6">
+    <line x1="340" y1="350" x2="720" y2="350"/>
+    <line x1="340" y1="342" x2="340" y2="358"/><line x1="720" y1="342" x2="720" y2="358"/>
+  </g>
+  <text x="530" y="342" fill="#9a774d" opacity="0.7" font-family="monospace" font-size="18" text-anchor="middle">38.0 m</text>
+</svg>

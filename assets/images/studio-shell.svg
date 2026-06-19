@@ -1,0 +1,28 @@
+<svg viewBox="0 0 1200 800" fill="none" xmlns="http://www.w3.org/2000/svg" preserveAspectRatio="xMidYMid slice" role="img" aria-label="Bare architectural shell of a room">
+<defs>
+<linearGradient id="shwall" x1="0" y1="0" x2="0" y2="1"><stop offset="0" stop-color="#cfc7b8"/><stop offset="1" stop-color="#bcb3a2"/></linearGradient>
+<linearGradient id="shfloor" x1="0" y1="0" x2="0" y2="1"><stop offset="0" stop-color="#a89e8d"/><stop offset="1" stop-color="#938872"/></linearGradient>
+</defs>
+<rect width="1200" height="800" fill="url(#shwall)"/>
+<!-- board-form concrete lines -->
+<g stroke="#b3a994" stroke-width="2" opacity="0.6"><line x1="0" y1="140" x2="1200" y2="140"/><line x1="0" y1="300" x2="1200" y2="300"/><line x1="0" y1="460" x2="1200" y2="460"/></g>
+<g fill="#a89e8d" opacity="0.6"><circle cx="200" cy="140" r="4"/><circle cx="500" cy="140" r="4"/><circle cx="800" cy="140" r="4"/><circle cx="1100" cy="140" r="4"/><circle cx="200" cy="460" r="4"/><circle cx="500" cy="460" r="4"/><circle cx="800" cy="460" r="4"/><circle cx="1100" cy="460" r="4"/></g>
+<!-- floor (bare concrete) -->
+<rect y="640" width="1200" height="160" fill="url(#shfloor)"/>
+<line x1="0" y1="640" x2="1200" y2="640" stroke="#7d7361" stroke-width="3"/>
+<!-- structural beam across top -->
+<rect x="0" y="80" width="1200" height="34" fill="#6e6559"/>
+<rect x="0" y="80" width="1200" height="6" fill="#9c6b43"/>
+<!-- exposed columns -->
+<rect x="150" y="114" width="46" height="526" fill="#b3a994"/><rect x="150" y="114" width="12" height="526" fill="#c4bbab"/>
+<rect x="640" y="114" width="46" height="526" fill="#b3a994"/><rect x="640" y="114" width="12" height="526" fill="#c4bbab"/>
+<!-- window OPENING (no glass treatment, just structural reveal) left -->
+<rect x="240" y="160" width="340" height="420" fill="#ddd6c9" stroke="#7d7361" stroke-width="8"/>
+<line x1="410" y1="160" x2="410" y2="580" stroke="#7d7361" stroke-width="6"/>
+<line x1="240" y1="370" x2="580" y2="370" stroke="#7d7361" stroke-width="6"/>
+<!-- rebar / construction detail -->
+<g stroke="#9c6b43" stroke-width="2" opacity="0.4"><line x1="760" y1="200" x2="760" y2="600"/><line x1="820" y1="200" x2="820" y2="600"/><line x1="760" y1="300" x2="820" y2="300"/><line x1="760" y1="420" x2="820" y2="420"/></g>
+<!-- dimension -->
+<g stroke="#7d7361" stroke-width="1.5" opacity="0.6"><line x1="240" y1="630" x2="580" y2="630"/><line x1="240" y1="622" x2="240" y2="638"/><line x1="580" y1="622" x2="580" y2="638"/></g>
+<text x="410" y="624" fill="#7d7361" opacity="0.7" font-family="monospace" font-size="18" text-anchor="middle">structure</text>
+</svg>

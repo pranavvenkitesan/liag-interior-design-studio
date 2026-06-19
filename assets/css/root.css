@@ -1,0 +1,285 @@
+/* ============================================================
+   LIAG — Design Tokens (root.css)
+   Single source of truth for the whole template.
+   Change a value here and it propagates everywhere.
+   ============================================================ */
+
+:root {
+  /* ---- Core palette: Cool Gray + Azure ---- */
+  --ink: #1b1f27;
+  /* near-black, cool */
+  --ink-soft: #2a3038;
+  /* soft dark for gradients */
+  --stone: #586577;
+  /* mid cool gray (slate) */
+  --ash: #b2c2d1;
+  /* cool blue-gray (mist) */
+  --linen: #dde5ec;
+  /* pale cool (cloud) */
+  --paper: #eef2f6;
+  /* main background */
+  --paper-warm: #f6f8fb;
+  /* lifted surface */
+  --ochre: #2f6fb0;
+  /* primary accent — confident azure */
+  --ochre-deep: #245a93;
+  /* accent hover/pressed */
+  --white: #ffffff;
+
+  /* ---- Semantic text colors ---- */
+  --text: var(--ink);
+  --text-muted: rgba(27, 31, 39, 0.64);
+  --text-faint: rgba(27, 31, 39, 0.40);
+  --text-invert: var(--paper);
+
+  /* ---- Lines & surfaces ---- */
+  --rule: rgba(27, 31, 39, 0.14);
+  --rule-soft: rgba(27, 31, 39, 0.08);
+  --surface: var(--paper-warm);
+  --surface-alt: var(--linen);
+
+  /* ---- Typography ---- */
+  --font-display: 'Fraunces', Georgia, serif;
+  /* headings */
+  --font-accent: 'Cormorant Garamond', Georgia, serif;
+  /* italic accents */
+  --font-body: 'Jost', system-ui, sans-serif;
+  /* body, UI */
+  --font-mono: 'JetBrains Mono', ui-monospace, monospace;
+  /* labels, meta */
+
+  /* ---- Type scale (fluid) ---- */
+  --fs-display: clamp(3rem, 7vw, 6.5rem);
+  --fs-h1: clamp(2.4rem, 5vw, 4.2rem);
+  --fs-h2: clamp(1.9rem, 3.6vw, 3rem);
+  --fs-h3: clamp(1.4rem, 2.4vw, 2rem);
+  --fs-h4: clamp(1.15rem, 1.8vw, 1.4rem);
+  --fs-body: 1.0625rem;
+  /* 17px */
+  --fs-small: 0.9375rem;
+  /* 15px */
+  --fs-label: 0.6875rem;
+  /* 11px — mono labels */
+
+  --lh-tight: 1.05;
+  --lh-snug: 1.25;
+  --lh-body: 1.7;
+
+  --ls-label: 0.18em;
+  /* letter-spacing for mono labels */
+  --ls-tight: -0.02em;
+
+  /* ---- Spacing scale ---- */
+  --s-1: 4px;
+  --s-2: 8px;
+  --s-3: 12px;
+  --s-4: 16px;
+  --s-5: 24px;
+  --s-6: 32px;
+  --s-7: 48px;
+  --s-8: 64px;
+  --s-9: 96px;
+  --s-10: 128px;
+  --s-11: 160px;
+
+  /* ---- Layout ---- */
+  --container: 1320px;
+  --container-narrow: 920px;
+  --container-wide: 1560px;
+  --gutter: clamp(20px, 4vw, 56px);
+  --section-y: clamp(64px, 10vw, 144px);
+
+  /* ---- Motion ---- */
+  --ease: cubic-bezier(0.4, 0, 0.2, 1);
+  --ease-out: cubic-bezier(0.16, 1, 0.3, 1);
+  --ease-in-out: cubic-bezier(0.65, 0, 0.35, 1);
+  --dur-fast: 0.25s;
+  --dur: 0.4s;
+  --dur-slow: 0.8s;
+
+  /* ---- Elevation ---- */
+  --shadow-sm: 0 2px 8px rgba(38, 37, 31, 0.06);
+  --shadow-md: 0 12px 32px -8px rgba(38, 37, 31, 0.12);
+  --shadow-lg: 0 28px 64px -20px rgba(38, 37, 31, 0.20);
+
+  --radius-sm: 2px;
+  --radius: 4px;
+  --radius-lg: 8px;
+
+  --z-nav: 100;
+  --z-overlay: 200;
+  --z-modal: 300;
+}
+
+/* ============================================================
+   PER-VARIANT MOOD SHIFTS
+   Each home variant adds a body class to shift temperature
+   while keeping the same design family. "User ki duniya
+   badal jaaye" — without breaking consistency.
+   ============================================================ */
+
+/* 01 — Interior Design Studio: soft, calm, residential */
+body.v-interior {
+  --paper: #eef2f6;
+  --paper-warm: #f6f8fb;
+  --accent: var(--ochre);
+  --accent-deep: var(--ochre-deep);
+}
+
+/* 02 — Architecture Firm: warm timber + clay, grounded, structural */
+body.v-architecture {
+  --ink: #2c2218;
+  /* bark */
+  --ink-soft: #3d3024;
+  --stone: #6b5640;
+  /* walnut */
+  --ash: #c2a981;
+  /* oak-sand */
+  --linen: #d8c4a8;
+  /* sand */
+  --paper: #f3ece1;
+  /* warm paper */
+  --paper-warm: #f8f3ea;
+  --text: #2c2218;
+  --text-muted: rgba(44, 34, 24, 0.62);
+  --text-faint: rgba(44, 34, 24, 0.40);
+  --rule: rgba(44, 34, 24, 0.16);
+  --rule-soft: rgba(44, 34, 24, 0.08);
+  --accent: #b5622f;
+  /* clay */
+  --accent-deep: #944c22;
+}
+
+/* 03 — Combined Studio (Interior + Architecture): warm greige, balanced */
+body.v-studio {
+  --ink: #25221d;
+  /* warm charcoal */
+  --ink-soft: #34302a;
+  --stone: #6e6559;
+  /* greige */
+  --ash: #b9b1a3;
+  /* light greige */
+  --linen: #ddd6c9;
+  /* warm pale */
+  --paper: #f0ece4;
+  /* greige paper */
+  --paper-warm: #f6f3ec;
+  --text: #25221d;
+  --text-muted: rgba(37, 34, 29, 0.62);
+  --text-faint: rgba(37, 34, 29, 0.40);
+  --rule: rgba(37, 34, 29, 0.15);
+  --rule-soft: rgba(37, 34, 29, 0.08);
+  --accent: #9c6b43;
+  /* bronze — bridges clay & neutral */
+  --accent-deep: #7e5433;
+}
+
+/* 04 — Design-Build / Renovation: approachable, brighter */
+body.v-build {
+  --paper: #edf2f7;
+  --paper-warm: #f6f9fc;
+  --accent: #3a7cc0;
+  --accent-deep: #2c6299;
+}
+
+/* Default accent (if no variant class) */
+:root {
+  --accent: var(--ochre);
+  --accent-deep: var(--ochre-deep);
+}
+
+/* ============================================================
+   DARK MODE — body.theme-dark
+   Flips the neutral ramp to dark; accent stays per-variant.
+   Works across all variants because everything uses these tokens.
+   ============================================================ */
+body.theme-dark {
+  --ink: #f3eee6;
+  /* text becomes light */
+  --ink-soft: #e6ddcf;
+  --stone: #9aa0a8;
+  --ash: #4a4f57;
+  --linen: #2a2e35;
+  --paper: #16181c;
+  /* page bg becomes near-black */
+  --paper-warm: #1d2025;
+  --white: #16181c;
+  --text: #f3eee6;
+  --text-muted: rgba(243, 238, 230, 0.66);
+  --text-faint: rgba(243, 238, 230, 0.42);
+  --text-invert: #16181c;
+  --rule: rgba(243, 238, 230, 0.16);
+  --rule-soft: rgba(243, 238, 230, 0.08);
+  --surface: #1d2025;
+  --surface-alt: #23272d;
+}
+
+/* Sections that were already dark (showcase, cta, timeline) use --ink as bg.
+   In dark mode --ink is light, so give those a dedicated stable dark token. */
+body.theme-dark .showcase,
+body.theme-dark .cta-band,
+body.theme-dark .timeline {
+  background: #0f1115;
+}
+
+body.theme-dark .footer {
+  background: #0f1115;
+}
+
+/* keep ambient FX subtle on dark */
+body.theme-dark .fx-aurora {
+  opacity: 0.5;
+}
+
+body.theme-dark .fx-grain {
+  opacity: 0.04;
+}
+
+/* Dark sections: text must stay light even though --paper is now dark */
+body.theme-dark .footer,
+body.theme-dark .cta-band,
+body.theme-dark .showcase__title,
+body.theme-dark .showcase__text {
+  color: #f3eee6;
+}
+
+body.theme-dark .footer a,
+body.theme-dark .footer__list li {
+  color: rgba(243, 238, 230, 0.7);
+}
+
+body.theme-dark .footer__col-title,
+body.theme-dark .footer__brand {
+  color: #f3eee6;
+}
+
+body.theme-dark .cta-band__sub {
+  color: rgba(243, 238, 230, 0.72);
+}
+
+/* dark-bg buttons need light fill so they read on dark page */
+body.theme-dark .btn--dark {
+  background: var(--accent);
+  color: #fff;
+  border-color: var(--accent);
+}
+
+body.theme-dark .btn--dark:hover {
+  background: var(--accent-deep);
+  border-color: var(--accent-deep);
+}
+
+body.theme-dark .btn--outline {
+  color: var(--text);
+  border-color: var(--rule);
+}
+
+body.theme-dark .btn--outline:hover {
+  background: var(--text);
+  color: var(--paper);
+}
+
+/* nav on dark */
+body.theme-dark .nav {
+  background: rgba(22, 24, 28, 0.82);
+}

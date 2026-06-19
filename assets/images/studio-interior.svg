@@ -1,0 +1,45 @@
+<svg viewBox="0 0 1200 900" fill="none" xmlns="http://www.w3.org/2000/svg" role="img" aria-label="Warm interior suite">
+<defs>
+<linearGradient id="iwall" x1="0" y1="0" x2="0" y2="1"><stop offset="0" stop-color="#e8e1d4"/><stop offset="1" stop-color="#ddd6c9"/></linearGradient>
+<linearGradient id="ifloor" x1="0" y1="0" x2="0" y2="1"><stop offset="0" stop-color="#c9bfae"/><stop offset="1" stop-color="#b3a994"/></linearGradient>
+<linearGradient id="isofa" x1="0" y1="0" x2="0" y2="1"><stop offset="0" stop-color="#9c6b43"/><stop offset="1" stop-color="#7e5433"/></linearGradient>
+</defs>
+<rect width="1200" height="900" fill="url(#iwall)"/>
+<rect y="640" width="1200" height="260" fill="url(#ifloor)"/>
+<line x1="0" y1="640" x2="1200" y2="640" stroke="#a89e8d" stroke-width="2"/>
+<!-- window with warm light -->
+<rect x="120" y="120" width="320" height="380" fill="#f0ece2" stroke="#8a8073" stroke-width="6"/>
+<line x1="280" y1="120" x2="280" y2="500" stroke="#8a8073" stroke-width="4"/>
+<line x1="120" y1="310" x2="440" y2="310" stroke="#8a8073" stroke-width="4"/>
+<rect x="126" y="126" width="308" height="180" fill="#9c6b43" opacity="0.12"/>
+<!-- large artwork -->
+<rect x="760" y="160" width="220" height="280" fill="#f0ece2" stroke="#8a8073" stroke-width="5"/>
+<rect x="790" y="200" width="160" height="200" fill="#9c6b43" opacity="0.25"/>
+<path d="M790 360 L840 280 L880 340 L920 240 L950 400 L790 400 Z" fill="#6e6559" opacity="0.4"/>
+<!-- sofa -->
+<g>
+<rect x="320" y="520" width="420" height="120" rx="14" fill="url(#isofa)"/>
+<rect x="320" y="488" width="420" height="60" rx="16" fill="#b08755"/>
+<rect x="300" y="510" width="50" height="130" rx="14" fill="#7e5433"/>
+<rect x="710" y="510" width="50" height="130" rx="14" fill="#7e5433"/>
+<!-- cushions -->
+<rect x="360" y="500" width="80" height="70" rx="10" fill="#ddd6c9"/>
+<rect x="470" y="500" width="80" height="70" rx="10" fill="#c9bfae"/>
+<rect x="580" y="500" width="80" height="70" rx="10" fill="#ddd6c9"/>
+</g>
+<!-- coffee table -->
+<ellipse cx="530" cy="700" rx="140" ry="28" fill="#6e6559"/>
+<rect x="500" y="700" width="8" height="40" fill="#534b41"/><rect x="556" y="700" width="8" height="40" fill="#534b41"/>
+<!-- floor lamp right -->
+<line x1="850" y1="640" x2="850" y2="500" stroke="#534b41" stroke-width="5"/>
+<path d="M822 500 h56 l-10 -40 h-36 z" fill="#9c6b43"/>
+<ellipse cx="850" cy="470" rx="60" ry="30" fill="#9c6b43" opacity="0.14"/>
+<!-- plant left -->
+<rect x="180" y="560" width="60" height="80" fill="#534b41"/>
+<path d="M210 560 q-30 -80 -10 -140" stroke="#9c6b43" stroke-width="6" fill="none" stroke-linecap="round"/>
+<path d="M210 560 q30 -70 15 -130" stroke="#6e6559" stroke-width="6" fill="none" stroke-linecap="round"/>
+<ellipse cx="195" cy="415" rx="20" ry="40" fill="#9c6b43" opacity="0.8" transform="rotate(-22 195 415)"/>
+<ellipse cx="228" cy="430" rx="20" ry="40" fill="#6e6559" opacity="0.75" transform="rotate(20 228 430)"/>
+<!-- rug -->
+<ellipse cx="530" cy="710" rx="280" ry="60" fill="#9c6b43" opacity="0.12"/>
+</svg>

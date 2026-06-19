@@ -1,0 +1,24 @@
+<svg viewBox="0 0 1920 1080" fill="none" xmlns="http://www.w3.org/2000/svg" preserveAspectRatio="xMidYMid slice" role="img" aria-label="Cultural building wide view">
+<defs>
+<linearGradient id="us" x1="0" y1="0" x2="0" y2="1"><stop offset="0" stop-color="#efe4d3"/><stop offset="1" stop-color="#e2d3bb"/></linearGradient>
+<linearGradient id="u1" x1="0" y1="0" x2="1" y2="1"><stop offset="0" stop-color="#c4a47a"/><stop offset="1" stop-color="#a8835c"/></linearGradient>
+<linearGradient id="u2" x1="0" y1="0" x2="1" y2="1"><stop offset="0" stop-color="#8a6d49"/><stop offset="1" stop-color="#5e4a34"/></linearGradient>
+</defs>
+<rect width="1920" height="1080" fill="url(#us)"/>
+<circle cx="1400" cy="240" r="380" fill="#ffffff" opacity="0.16"/>
+<g stroke="#9a774d" stroke-width="1" opacity="0.09"><line x1="0" y1="220" x2="1920" y2="220"/><line x1="0" y1="480" x2="1920" y2="480"/><line x1="480" y1="0" x2="480" y2="1080"/><line x1="960" y1="0" x2="960" y2="1080"/><line x1="1440" y1="0" x2="1440" y2="1080"/></g>
+<rect y="880" width="1920" height="200" fill="#d8c4a8"/><rect y="880" width="1920" height="5" fill="#b89668" opacity="0.5"/>
+<!-- angular faceted mass (right) -->
+<polygon points="900,880 900,520 1240,360 1500,470 1500,880" fill="url(#u1)"/>
+<polygon points="1500,880 1500,470 1760,580 1760,880" fill="url(#u2)"/>
+<polygon points="900,520 1240,360 1500,470 1480,490 1240,388 920,540" fill="#2c2218"/>
+<polygon points="1240,360 1248,364 1504,474 1500,486" fill="#b5622f"/>
+<polygon points="1240,388 1480,490 1480,690 1240,580" fill="#5e4a34" opacity="0.4"/>
+<g fill="#cdbfa8" opacity="0.9"><polygon points="970,560 1060,510 1060,860 970,860"/><polygon points="1110,500 1200,450 1200,860 1110,860"/></g>
+<g fill="#e9cfa0" opacity="0.85"><rect x="1540" y="600" width="56" height="70"/><rect x="1620" y="600" width="56" height="70"/><rect x="1540" y="690" width="56" height="70"/><rect x="1620" y="690" width="56" height="70"/></g>
+<rect x="1620" y="600" width="56" height="70" fill="#c87a3e" opacity="0.8"/>
+<rect x="1180" y="770" width="90" height="110" fill="#1a140d"/>
+<circle cx="1820" cy="800" r="40" fill="#b5622f" opacity="0.5"/>
+<line x1="170" y1="880" x2="170" y2="700" stroke="#4a3a2a" stroke-width="5" stroke-linecap="round"/><ellipse cx="170" cy="655" rx="54" ry="74" fill="#7a6047" opacity="0.5"/>
+<g fill="#2c2218" opacity="0.5"><rect x="1300" y="844" width="8" height="40" rx="3"/><circle cx="1304" cy="839" r="5.5"/></g>
+</svg>

@@ -1,0 +1,95 @@
+<svg viewBox="0 0 1600 900" fill="none" xmlns="http://www.w3.org/2000/svg" preserveAspectRatio="xMidYMid slice" role="img" aria-label="Dramatic warm architectural interior with structural columns and light">
+  <defs>
+    <linearGradient id="awall" x1="0" y1="0" x2="0" y2="1">
+      <stop offset="0" stop-color="#3a2e22"/>
+      <stop offset="1" stop-color="#241b12"/>
+    </linearGradient>
+    <linearGradient id="afloor" x1="0" y1="0" x2="0" y2="1">
+      <stop offset="0" stop-color="#2c2218"/>
+      <stop offset="1" stop-color="#1a140d"/>
+    </linearGradient>
+    <linearGradient id="alight" x1="0" y1="0" x2="0" y2="1">
+      <stop offset="0" stop-color="#e9cfa0"/>
+      <stop offset="1" stop-color="#b5894d"/>
+    </linearGradient>
+    <radialGradient id="aglow" cx="0.72" cy="0.35" r="0.55">
+      <stop offset="0" stop-color="#e9cfa0" stop-opacity="0.30"/>
+      <stop offset="1" stop-color="#e9cfa0" stop-opacity="0"/>
+    </radialGradient>
+  </defs>
+
+  <!-- Wall -->
+  <rect width="1600" height="900" fill="url(#awall)"/>
+  <!-- concrete board-form lines -->
+  <g stroke="#2c2218" stroke-width="2" opacity="0.6">
+    <line x1="0" y1="150" x2="1600" y2="150"/><line x1="0" y1="300" x2="1600" y2="300"/>
+    <line x1="0" y1="450" x2="1600" y2="450"/><line x1="0" y1="600" x2="1600" y2="600"/>
+  </g>
+  <!-- tie-rod dots (concrete formwork detail) -->
+  <g fill="#1a140d" opacity="0.7">
+    <circle cx="200" cy="150" r="4"/><circle cx="500" cy="150" r="4"/><circle cx="800" cy="150" r="4"/><circle cx="1100" cy="150" r="4"/><circle cx="1400" cy="150" r="4"/>
+    <circle cx="200" cy="450" r="4"/><circle cx="500" cy="450" r="4"/><circle cx="800" cy="450" r="4"/><circle cx="1100" cy="450" r="4"/><circle cx="1400" cy="450" r="4"/>
+  </g>
+
+  <!-- Floor -->
+  <rect y="680" width="1600" height="220" fill="url(#afloor)"/>
+  <line x1="0" y1="680" x2="1600" y2="680" stroke="#0f0b07" stroke-width="3"/>
+  <!-- floor plank lines -->
+  <g stroke="#3a2e22" stroke-width="2" opacity="0.5">
+    <line x1="0" y1="760" x2="1600" y2="760"/>
+    <line x1="200" y1="680" x2="120" y2="900"/><line x1="500" y1="680" x2="440" y2="900"/><line x1="800" y1="680" x2="760" y2="900"/><line x1="1100" y1="680" x2="1080" y2="900"/><line x1="1400" y1="680" x2="1400" y2="900"/>
+  </g>
+
+  <!-- Tall structural columns -->
+  <g>
+    <rect x="160" y="120" width="70" height="560" fill="#241b12"/>
+    <rect x="160" y="120" width="18" height="560" fill="#3a2e22"/>
+    <rect x="520" y="120" width="70" height="560" fill="#241b12"/>
+    <rect x="520" y="120" width="18" height="560" fill="#3a2e22"/>
+  </g>
+
+  <!-- Large window opening (right) with warm dusk -->
+  <g>
+    <rect x="980" y="120" width="480" height="560" fill="url(#alight)" opacity="0.92"/>
+    <!-- deep reveal frame -->
+    <rect x="980" y="120" width="480" height="560" fill="none" stroke="#1a140d" stroke-width="10"/>
+    <!-- mullions -->
+    <line x1="1220" y1="120" x2="1220" y2="680" stroke="#1a140d" stroke-width="8"/>
+    <line x1="980" y1="400" x2="1460" y2="400" stroke="#1a140d" stroke-width="8"/>
+    <!-- distant warm skyline -->
+    <g fill="#9a6f3c" opacity="0.5">
+      <rect x="1010" y="300" width="50" height="100"/><rect x="1080" y="260" width="60" height="140"/><rect x="1260" y="290" width="50" height="110"/><rect x="1340" y="250" width="60" height="150"/>
+    </g>
+  </g>
+  <!-- light spill on floor -->
+  <path d="M1000 680 L1440 680 L1320 860 L880 860 Z" fill="url(#alight)" opacity="0.16"/>
+
+  <!-- Hanging pendant (right side, near windows, away from left text) -->
+  <g stroke="#0f0b07" stroke-width="3">
+    <line x1="1180" y1="120" x2="1180" y2="300"/>
+    <path d="M1145 300 h70 l-12 40 h-46 z" fill="#b5622f"/>
+  </g>
+  <ellipse cx="1180" cy="320" rx="60" ry="40" fill="#e9cfa0" opacity="0.16"/>
+
+  <!-- Bench / furniture silhouette (center-low, short, below text area) -->
+  <g>
+    <rect x="980" y="610" width="300" height="36" rx="6" fill="#3a2e22"/>
+    <rect x="1000" y="646" width="18" height="36" fill="#1a140d"/>
+    <rect x="1244" y="646" width="18" height="36" fill="#1a140d"/>
+    <rect x="990" y="596" width="280" height="18" rx="8" fill="#6b5640"/>
+  </g>
+
+  <!-- Large plant (right side, between bench and window) -->
+  <g>
+    <path d="M1300 860 L1380 860 L1368 700 L1312 700 Z" fill="#15100a"/>
+    <path d="M1340 700 Q1280 560 1300 460" stroke="#9a774d" stroke-width="7" fill="none" stroke-linecap="round"/>
+    <path d="M1340 700 Q1400 580 1385 480" stroke="#b5894d" stroke-width="7" fill="none" stroke-linecap="round"/>
+    <path d="M1340 700 Q1338 580 1342 490" stroke="#7a6047" stroke-width="7" fill="none" stroke-linecap="round"/>
+    <ellipse cx="1300" cy="445" rx="26" ry="52" fill="#9a774d" opacity="0.85" transform="rotate(-28 1300 445)"/>
+    <ellipse cx="1386" cy="466" rx="26" ry="52" fill="#b5894d" opacity="0.85" transform="rotate(24 1386 466)"/>
+    <ellipse cx="1342" cy="478" rx="24" ry="50" fill="#7a6047" opacity="0.8"/>
+  </g>
+
+  <!-- ambient warm glow -->
+  <rect width="1600" height="900" fill="url(#aglow)"/>
+</svg>

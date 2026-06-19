@@ -1,0 +1,38 @@
+<svg viewBox="0 0 1000 1200" fill="none" xmlns="http://www.w3.org/2000/svg" role="img" aria-label="Cultural building rendering">
+<defs>
+<linearGradient id="usky" x1="0" y1="0" x2="0" y2="1"><stop offset="0" stop-color="#f3ece1"/><stop offset="1" stop-color="#e7dccb"/></linearGradient>
+<linearGradient id="uface1" x1="0" y1="0" x2="1" y2="1"><stop offset="0" stop-color="#c4a47a"/><stop offset="1" stop-color="#a8835c"/></linearGradient>
+<linearGradient id="uface2" x1="0" y1="0" x2="1" y2="1"><stop offset="0" stop-color="#8a6d49"/><stop offset="1" stop-color="#5e4a34"/></linearGradient>
+<linearGradient id="uface3" x1="0" y1="0" x2="0" y2="1"><stop offset="0" stop-color="#e9dcc7"/><stop offset="1" stop-color="#d4c0a2"/></linearGradient>
+</defs>
+<rect width="1000" height="1200" fill="url(#usky)"/>
+<circle cx="300" cy="240" r="260" fill="#ffffff" opacity="0.18"/>
+<rect y="1020" width="1000" height="180" fill="#d8c4a8"/><rect y="1020" width="1000" height="6" fill="#b89668" opacity="0.5"/>
+<!-- angular faceted mass: left bright facet -->
+<polygon points="160,1020 160,620 440,430 620,540 620,1020" fill="url(#uface1)"/>
+<!-- right dark facet -->
+<polygon points="620,1020 620,540 820,650 820,1020" fill="url(#uface2)"/>
+<!-- top faceted roof planes -->
+<polygon points="160,620 440,430 620,540 600,560 440,460 180,640" fill="#2c2218"/>
+<polygon points="440,430 448,434 624,544 620,556" fill="#b5622f"/>
+<!-- inner shadow facet -->
+<polygon points="440,460 600,560 600,720 440,640" fill="#5e4a34" opacity="0.4"/>
+<!-- vertical glazing slots on bright facet -->
+<g fill="#cdbfa8" opacity="0.9">
+<polygon points="220,660 290,620 290,1000 220,1000"/>
+<polygon points="330,600 400,560 400,1000 330,1000"/>
+</g>
+<g stroke="#5e4a34" stroke-width="2" opacity="0.5"><line x1="255" y1="640" x2="255" y2="1000"/><line x1="365" y1="580" x2="365" y2="1000"/></g>
+<!-- right facet windows -->
+<g fill="#e9cfa0" opacity="0.85"><rect x="660" y="700" width="50" height="64"/><rect x="730" y="700" width="50" height="64"/><rect x="660" y="790" width="50" height="64"/><rect x="730" y="790" width="50" height="64"/></g>
+<rect x="730" y="700" width="50" height="64" fill="#c87a3e" opacity="0.8"/>
+<!-- entry -->
+<rect x="400" y="910" width="80" height="110" fill="#1a140d"/>
+<rect x="380" y="1000" width="120" height="10" fill="#b89668"/><rect x="360" y="1010" width="160" height="11" fill="#a8835c"/>
+<!-- sculpture -->
+<circle cx="880" cy="940" r="34" fill="#b5622f" opacity="0.5"/><rect x="876" y="940" width="8" height="80" fill="#4a3a2a"/>
+<!-- scale figures -->
+<g fill="#2c2218" opacity="0.55"><rect x="520" y="980" width="7" height="36" rx="3"/><circle cx="523.5" cy="976" r="5"/><rect x="550" y="982" width="7" height="34" rx="3"/><circle cx="553.5" cy="978" r="5"/></g>
+<!-- tree -->
+<line x1="90" y1="1020" x2="90" y2="900" stroke="#4a3a2a" stroke-width="5" stroke-linecap="round"/><ellipse cx="90" cy="868" rx="40" ry="54" fill="#7a6047" opacity="0.6"/>
+</svg>

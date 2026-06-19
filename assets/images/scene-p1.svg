@@ -1,0 +1,64 @@
+<svg viewBox="0 0 800 1000" fill="none" xmlns="http://www.w3.org/2000/svg" role="img" aria-label="Illustrated residential reading nook">
+  <defs>
+    <linearGradient id="w1" x1="0" y1="0" x2="0" y2="1"><stop offset="0" stop-color="#eef2f6"/><stop offset="1" stop-color="#dde5ec"/></linearGradient>
+    <linearGradient id="f1" x1="0" y1="0" x2="0" y2="1"><stop offset="0" stop-color="#cfd8e2"/><stop offset="1" stop-color="#b7c3d0"/></linearGradient>
+    <linearGradient id="win1" x1="0" y1="0" x2="0" y2="1"><stop offset="0" stop-color="#dbe9f6"/><stop offset="1" stop-color="#a7c4e2"/></linearGradient>
+  </defs>
+  <rect width="800" height="1000" fill="url(#w1)"/>
+  <rect y="780" width="800" height="220" fill="url(#f1)"/>
+  <line x1="0" y1="780" x2="800" y2="780" stroke="#9fb0c2" stroke-width="2"/>
+
+  <!-- Arched window -->
+  <path d="M470 200 a150 150 0 0 1 300 0 V560 H470 Z" fill="url(#win1)" stroke="#1b1f27" stroke-width="3"/>
+  <line x1="620" y1="60" x2="620" y2="560" stroke="#1b1f27" stroke-width="3"/>
+  <line x1="470" y1="360" x2="770" y2="360" stroke="#1b1f27" stroke-width="3"/>
+
+  <!-- Tall bookshelf (left) -->
+  <g>
+    <rect x="70" y="240" width="180" height="540" fill="#46566b"/>
+    <rect x="84" y="254" width="152" height="510" fill="#3c4a5e"/>
+    <line x1="84" y1="380" x2="236" y2="380" stroke="#586577" stroke-width="6"/>
+    <line x1="84" y1="510" x2="236" y2="510" stroke="#586577" stroke-width="6"/>
+    <line x1="84" y1="640" x2="236" y2="640" stroke="#586577" stroke-width="6"/>
+    <!-- books -->
+    <rect x="96" y="300" width="14" height="78" fill="#2f6fb0"/>
+    <rect x="114" y="312" width="14" height="66" fill="#b2c2d1"/>
+    <rect x="132" y="296" width="14" height="82" fill="#586577"/>
+    <rect x="150" y="318" width="20" height="60" fill="#2f6fb0"/>
+    <rect x="96" y="430" width="16" height="78" fill="#586577"/>
+    <rect x="116" y="442" width="14" height="66" fill="#2f6fb0"/>
+    <rect x="180" y="430" width="46" height="78" fill="#b2c2d1"/>
+    <rect x="100" y="560" width="40" height="78" fill="#2f6fb0" opacity="0.7"/>
+    <rect x="150" y="566" width="16" height="72" fill="#586577"/>
+  </g>
+
+  <!-- Armchair -->
+  <g>
+    <ellipse cx="430" cy="860" rx="180" ry="40" fill="#b2c2d1" opacity="0.5"/>
+    <rect x="330" y="560" width="210" height="150" rx="40" fill="#46566b"/>
+    <rect x="318" y="640" width="234" height="170" rx="34" fill="#5a6b80"/>
+    <rect x="300" y="650" width="60" height="160" rx="26" fill="#46566b"/>
+    <rect x="510" y="650" width="60" height="160" rx="26" fill="#46566b"/>
+    <rect x="368" y="600" width="134" height="110" rx="22" fill="#586577"/>
+    <rect x="392" y="630" width="80" height="80" rx="14" fill="#2f6fb0"/>
+    <rect x="330" y="808" width="16" height="34" fill="#1b1f27"/>
+    <rect x="524" y="808" width="16" height="34" fill="#1b1f27"/>
+  </g>
+
+  <!-- Floor lamp -->
+  <g stroke="#1b1f27" stroke-width="3">
+    <line x1="610" y1="470" x2="610" y2="800"/>
+    <path d="M584 470 h52 l-9 -42 h-34 z" fill="#2f6fb0"/>
+    <ellipse cx="610" cy="802" rx="30" ry="7" fill="#46566b" stroke="none"/>
+  </g>
+  <ellipse cx="610" cy="450" rx="60" ry="42" fill="#2f6fb0" opacity="0.12"/>
+
+  <!-- Plant -->
+  <g>
+    <path d="M150 940 L200 940 L192 820 L158 820 Z" fill="#46566b"/>
+    <path d="M175 820 Q140 730 150 670" stroke="#2f6fb0" stroke-width="6" fill="none" stroke-linecap="round"/>
+    <path d="M175 820 Q210 740 200 680" stroke="#586577" stroke-width="6" fill="none" stroke-linecap="round"/>
+    <ellipse cx="150" cy="660" rx="20" ry="38" fill="#2f6fb0" opacity="0.85" transform="rotate(-25 150 660)"/>
+    <ellipse cx="200" cy="672" rx="20" ry="38" fill="#586577" opacity="0.85" transform="rotate(22 200 672)"/>
+  </g>
+</svg>

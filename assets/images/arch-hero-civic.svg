@@ -1,0 +1,26 @@
+<svg viewBox="0 0 1920 1080" fill="none" xmlns="http://www.w3.org/2000/svg" preserveAspectRatio="xMidYMid slice" role="img" aria-label="Civic building wide view">
+<defs>
+<linearGradient id="cs" x1="0" y1="0" x2="0" y2="1"><stop offset="0" stop-color="#efe4d3"/><stop offset="1" stop-color="#e2d3bb"/></linearGradient>
+<linearGradient id="cl" x1="0" y1="0" x2="0" y2="1"><stop offset="0" stop-color="#e9dcc7"/><stop offset="1" stop-color="#d4c0a2"/></linearGradient>
+<linearGradient id="cm" x1="0" y1="0" x2="0" y2="1"><stop offset="0" stop-color="#b8966a"/><stop offset="1" stop-color="#9a774d"/></linearGradient>
+</defs>
+<rect width="1920" height="1080" fill="url(#cs)"/>
+<circle cx="1450" cy="220" r="400" fill="#ffffff" opacity="0.16"/>
+<g stroke="#9a774d" stroke-width="1" opacity="0.09"><line x1="0" y1="200" x2="1920" y2="200"/><line x1="0" y1="440" x2="1920" y2="440"/><line x1="0" y1="680" x2="1920" y2="680"/><line x1="480" y1="0" x2="480" y2="1080"/><line x1="960" y1="0" x2="960" y2="1080"/><line x1="1440" y1="0" x2="1440" y2="1080"/></g>
+<rect y="880" width="1920" height="200" fill="#d8c4a8"/><rect y="880" width="1920" height="5" fill="#b89668" opacity="0.5"/>
+<!-- entablature + cornice (right 60%) -->
+<rect x="820" y="360" width="940" height="120" fill="url(#cm)"/>
+<rect x="790" y="322" width="1000" height="40" fill="#2c2218"/><rect x="790" y="314" width="1000" height="9" fill="#b5622f"/>
+<polygon points="1760,360 1820,400 1820,480 1760,480" fill="#4a3a2a"/>
+<g fill="#cdbfa8" opacity="0.9"><rect x="860" y="385" width="100" height="70"/><rect x="1000" y="385" width="100" height="70"/><rect x="1140" y="385" width="100" height="70"/><rect x="1280" y="385" width="100" height="70"/><rect x="1420" y="385" width="100" height="70"/><rect x="1560" y="385" width="100" height="70"/></g>
+<!-- colonnade -->
+<g fill="url(#cl)"><rect x="840" y="480" width="50" height="400"/><rect x="970" y="480" width="50" height="400"/><rect x="1100" y="480" width="50" height="400"/><rect x="1230" y="480" width="50" height="400"/><rect x="1360" y="480" width="50" height="400"/><rect x="1490" y="480" width="50" height="400"/><rect x="1620" y="480" width="50" height="400"/></g>
+<g fill="#4a3a2a" opacity="0.5"><rect x="890" y="480" width="80" height="400"/><rect x="1020" y="480" width="80" height="400"/><rect x="1150" y="480" width="80" height="400"/><rect x="1280" y="480" width="80" height="400"/><rect x="1410" y="480" width="80" height="400"/><rect x="1540" y="480" width="80" height="400"/></g>
+<g fill="#2c2218"><rect x="830" y="474" width="70" height="10"/><rect x="960" y="474" width="70" height="10"/><rect x="1090" y="474" width="70" height="10"/><rect x="1220" y="474" width="70" height="10"/><rect x="1350" y="474" width="70" height="10"/><rect x="1480" y="474" width="70" height="10"/><rect x="1610" y="474" width="70" height="10"/></g>
+<!-- entry steps -->
+<rect x="1120" y="846" width="320" height="12" fill="#c4a878"/><rect x="1098" y="858" width="364" height="12" fill="#b89668"/><rect x="1076" y="870" width="408" height="12" fill="#a8835c"/>
+<rect x="1240" y="770" width="80" height="110" fill="#1a140d"/>
+<!-- tree far left -->
+<line x1="170" y1="880" x2="170" y2="700" stroke="#4a3a2a" stroke-width="5" stroke-linecap="round"/><ellipse cx="170" cy="655" rx="54" ry="74" fill="#7a6047" opacity="0.5"/>
+<g fill="#2c2218" opacity="0.5"><rect x="1180" y="844" width="8" height="40" rx="3"/><circle cx="1184" cy="839" r="5.5"/></g>
+</svg>

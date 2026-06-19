@@ -1,0 +1,773 @@
+<!DOCTYPE html>
+<html lang="en">
+
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="theme-color" content="#26251f">
+  <meta name="description"
+    content="Liag — an interior design studio crafting warm, considered spaces. Residential and commercial interiors, from concept to completion.">
+  <title>Liag — Interior Design Studio</title>
+
+  <link rel="preconnect" href="https://fonts.googleapis.com/">
+  <link rel="preconnect" href="https://fonts.gstatic.com/" crossorigin>
+  <link
+    href="https://fonts.googleapis.com/css2?family=Fraunces:ital,opsz,wght@0,9..144,400;0,9..144,500;1,9..144,400&amp;family=Cormorant+Garamond:ital,wght@0,500;1,500&amp;family=Jost:wght@400;500&amp;family=JetBrains+Mono:wght@400;500&amp;display=swap"
+    rel="stylesheet">
+
+  <link rel="stylesheet" href="assets/css/root.css">
+  <link rel="stylesheet" href="assets/css/base.css">
+  <link rel="stylesheet" href="assets/css/components.css">
+  <link rel="stylesheet" href="assets/css/pages.css">
+  <link rel="stylesheet" href="assets/css/fx.css">
+</head>
+
+<body class="v-interior">
+
+  <a class="skip-link" href="#main">Skip to content</a>
+
+  <!-- ===================== AMBIENT BACKGROUND FX ===================== -->
+  <div class="fx-bg" aria-hidden="true">
+    <span class="fx-aurora"></span>
+    <span class="fx-orb fx-orb--1"></span>
+    <span class="fx-orb fx-orb--2"></span>
+    <span class="fx-orb fx-orb--3"></span>
+  </div>
+  <canvas class="fx-particles" aria-hidden="true"></canvas>
+  <div class="fx-grain" aria-hidden="true"></div>
+  <div class="fx-cursor" aria-hidden="true"></div>
+
+  <!-- ===================== NAV ===================== -->
+  <header class="nav" data-nav>
+    <div class="container nav__inner">
+      <a href="index.html" class="nav__brand">Liag<span class="nav__brand-dot" aria-hidden="true"></span></a>
+      <nav class="nav__menu" aria-label="Primary">
+        <a href="index.html" aria-current="page">Studio</a>
+        <a href="projects.html">Projects</a>
+        <a href="services.html">Services</a>
+        <a href="about.html">About</a>
+        <a href="blog.html">Journal</a>
+      </nav>
+      <div class="nav__actions">
+        <button class="nav__estimate" data-open-modal="estimator-modal">Quick estimate</button>
+        <button class="btn btn--primary" data-open-modal="inquiry-modal">Start a project</button>
+        <button class="nav__toggle" data-nav-toggle aria-label="Open menu" aria-expanded="false">
+          <span></span><span></span><span></span>
+        </button>
+      </div>
+    </div>
+  </header>
+
+  <!-- Mobile drawer -->
+  <div class="nav__drawer" data-nav-drawer>
+    <button class="nav__drawer-close" data-nav-close aria-label="Close menu">&times;</button>
+    <nav class="nav__drawer-menu" aria-label="Mobile">
+      <a href="index.html">Studio</a>
+      <a href="projects.html">Projects</a>
+      <a href="services.html">Services</a>
+      <a href="about.html">About</a>
+      <a href="blog.html">Journal</a>
+    </nav>
+    <div class="nav__drawer-footer">
+      <button class="btn btn--outline btn--block" data-open-modal="estimator-modal"
+        style="margin-bottom:var(--s-3);">Quick estimate</button>
+      <button class="btn btn--primary btn--block" data-open-modal="inquiry-modal">Start a project</button>
+    </div>
+  </div>
+
+  <main id="main">
+
+    <!-- ===================== HERO (editorial asymmetric) ===================== -->
+    <section class="ehero">
+      <div class="ehero__sidelabel" aria-hidden="true">
+        <span>Interior Design Studio</span>
+        <span class="ehero__sidelabel-dim">Lahore · Est. 2009</span>
+      </div>
+
+      <div class="container ehero__inner">
+        <!-- Big type layer -->
+        <div class="ehero__type">
+          <span class="eyebrow reveal">N°01 — The Studio</span>
+          <h1 class="ehero__title">
+            <span class="ehero__line reveal reveal-delay-1">Spaces</span>
+            <span class="ehero__line ehero__line--indent reveal reveal-delay-2">that <em
+                class="accent-word">hold</em></span>
+            <span class="ehero__line ehero__line--push reveal reveal-delay-3">a feeling.</span>
+          </h1>
+        </div>
+
+        <!-- Image layer (overlaps type) -->
+        <figure class="ehero__figure reveal reveal-delay-2">
+          <img src="assets/images/photos/interior-hero.jpg"
+            onerror="this.onerror=null;this.src='assets/images/scene-hero.svg'"
+            alt="A contemporary living room with a sectional sofa and large windows">
+          <figcaption class="ehero__figcaption">
+            <span class="ehero__figcaption-num">Fig. 01</span>
+            <span class="ehero__figcaption-text">The Gulberg Residence — Lahore</span>
+          </figcaption>
+        </figure>
+
+        <!-- Lead + actions, offset low-left -->
+        <div class="ehero__intro reveal reveal-delay-3">
+          <p class="ehero__lead">
+            We shape warm, considered homes and workplaces — from the first
+            sketch to the last styled shelf.
+          </p>
+          <div class="ehero__actions">
+            <a href="estimate.html" class="btn btn--dark btn--lg">
+              Start a project
+              <svg width="14" height="10" viewBox="0 0 14 10" fill="none" aria-hidden="true">
+                <path d="M1 5h12M13 5L9 1M13 5L9 9" stroke="currentColor" stroke-width="1.4" />
+              </svg>
+            </a>
+            <a href="projects.html" class="link-arrow">View our work
+              <svg width="14" height="10" viewBox="0 0 14 10" fill="none" aria-hidden="true">
+                <path d="M1 5h12M13 5L9 1M13 5L9 9" stroke="currentColor" stroke-width="1.4" />
+              </svg>
+            </a>
+          </div>
+        </div>
+      </div>
+
+      <div class="ehero__marquee" aria-hidden="true">
+        <div class="ehero__marquee-track">
+          <span>Residential</span><span class="dot">·</span>
+          <span>Commercial</span><span class="dot">·</span>
+          <span>Hospitality</span><span class="dot">·</span>
+          <span>Styling</span><span class="dot">·</span>
+          <span>Furniture</span><span class="dot">·</span>
+          <span>Renovation</span><span class="dot">·</span>
+          <span>Residential</span><span class="dot">·</span>
+          <span>Commercial</span><span class="dot">·</span>
+          <span>Hospitality</span><span class="dot">·</span>
+          <span>Styling</span><span class="dot">·</span>
+          <span>Furniture</span><span class="dot">·</span>
+          <span>Renovation</span><span class="dot">·</span>
+        </div>
+      </div>
+    </section>
+
+    <!-- ===================== INTRO / PHILOSOPHY ===================== -->
+    <section class="section intro">
+      <div class="container intro__inner">
+        <p class="intro__statement reveal">
+          We believe a room should feel <em class="accent-word">inevitable</em> — as if it
+          could not have been any other way. Every project begins with how you want to
+          live, then works backward to light, material, and proportion.
+        </p>
+        <div class="intro__meta reveal reveal-delay-1">
+          <div class="intro__stat">
+            <span class="intro__stat-num" data-count="15">0</span>
+            <span class="intro__stat-label">Years designing</span>
+          </div>
+          <div class="intro__stat">
+            <span class="intro__stat-num" data-count="120" data-count-suffix="+">0</span>
+            <span class="intro__stat-label">Spaces completed</span>
+          </div>
+          <div class="intro__stat">
+            <span class="intro__stat-num" data-count="6">0</span>
+            <span class="intro__stat-label">Design awards</span>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- ===================== SERVICES ===================== -->
+    <section class="section services-block">
+      <div class="container">
+        <div class="block-head reveal">
+          <span class="eyebrow">What we do</span>
+          <h2 class="block-head__title">A studio for the <span class="accent-word">whole</span> space.</h2>
+        </div>
+        <div class="services-grid">
+          <article class="service reveal">
+            <span class="service__icon" aria-hidden="true">
+              <!-- Full interior design: layered room / plan -->
+              <svg viewBox="0 0 60 60">
+                <ellipse class="ic-shadow" cx="30" cy="52" rx="22" ry="4" />
+                <rect data-draw class="d1" style="--len:170" x="10" y="12" width="40" height="34" rx="2" fill="none"
+                  stroke="#1b1f27" stroke-width="2" />
+                <rect data-pop x="14" y="16" width="16" height="12" fill="#2f6fb0" />
+                <rect data-pop class="p2" x="32" y="16" width="14" height="12" fill="#b2c2d1" />
+                <rect data-pop class="p3" x="14" y="30" width="32" height="12" fill="#586577" />
+                <circle data-float cx="38" cy="36" r="3" fill="#2f6fb0" />
+              </svg>
+            </span>
+            <span class="service__num">01</span>
+            <h3 class="service__title">Full interior design</h3>
+            <p class="service__desc">Concept, space planning, materials, lighting, and furnishing — managed end to end
+              so you live in the finished room, not the process.</p>
+          </article>
+          <article class="service reveal reveal-delay-1">
+            <span class="service__icon" aria-hidden="true">
+              <!-- Renovation: house with rising roof -->
+              <svg viewBox="0 0 60 60">
+                <ellipse class="ic-shadow" cx="30" cy="52" rx="22" ry="4" />
+                <rect data-pop x="16" y="30" width="28" height="18" fill="#586577" />
+                <path data-float d="M12 30 L30 14 L48 30 Z" fill="#2f6fb0" />
+                <rect data-pop class="p2" x="26" y="36" width="8" height="12" fill="#b2c2d1" />
+                <circle data-pulse cx="30" cy="11" r="3" fill="#2f6fb0" />
+              </svg>
+            </span>
+            <span class="service__num">02</span>
+            <h3 class="service__title">Renovation &amp; remodel</h3>
+            <p class="service__desc">Reworking what you have — walls, flow, and finishes — to make a tired space feel
+              considered, generous, and new again.</p>
+          </article>
+          <article class="service reveal reveal-delay-2">
+            <span class="service__icon" aria-hidden="true">
+              <!-- Styling: spinning ring + center -->
+              <svg viewBox="0 0 60 60">
+                <ellipse class="ic-shadow" cx="30" cy="52" rx="20" ry="4" />
+                <circle data-spin cx="30" cy="28" r="16" fill="none" stroke="#2f6fb0" stroke-width="3"
+                  stroke-dasharray="4 6" />
+                <circle data-pop cx="30" cy="28" r="9" fill="#b2c2d1" />
+                <circle data-pulse cx="30" cy="28" r="4" fill="#2f6fb0" />
+              </svg>
+            </span>
+            <span class="service__num">03</span>
+            <h3 class="service__title">Styling &amp; furnishing</h3>
+            <p class="service__desc">The final layer — furniture, textiles, art, and objects sourced and placed so the
+              room reads as one quiet, complete thought.</p>
+          </article>
+          <article class="service reveal reveal-delay-3">
+            <span class="service__icon" aria-hidden="true">
+              <!-- Consultation: document + swaying chat dot -->
+              <svg viewBox="0 0 60 60">
+                <ellipse class="ic-shadow" cx="30" cy="52" rx="20" ry="4" />
+                <path data-pop d="M16 10 h20 l8 8 v28 h-28 Z" fill="#586577" />
+                <path data-pop class="p2" d="M36 10 v8 h8 Z" fill="#1b1f27" />
+                <rect data-pop class="p3" x="21" y="26" width="18" height="2.6" fill="#eef2f6" />
+                <rect data-pop class="p3" x="21" y="32" width="13" height="2.6" fill="#eef2f6" />
+                <circle data-sway cx="44" cy="42" r="7" fill="#2f6fb0" />
+              </svg>
+            </span>
+            <span class="service__num">04</span>
+            <h3 class="service__title">Design consultation</h3>
+            <p class="service__desc">A focused session for a single room or decision — colour, layout, or a second
+              opinion — when you want direction, not a full project.</p>
+          </article>
+        </div>
+        <div class="services-block__cta reveal">
+          <a href="services.html" class="link-arrow">All services in detail
+            <svg width="14" height="10" viewBox="0 0 14 10" fill="none" aria-hidden="true">
+              <path d="M1 5h12M13 5L9 1M13 5L9 9" stroke="currentColor" stroke-width="1.4" />
+            </svg>
+          </a>
+        </div>
+      </div>
+    </section>
+
+    <!-- ===================== FEATURED PROJECTS ===================== -->
+    <section class="section work">
+      <div class="container">
+        <div class="block-head block-head--row reveal">
+          <div>
+            <span class="eyebrow">Selected work</span>
+            <h2 class="block-head__title">Recent <span class="accent-word">projects</span>.</h2>
+          </div>
+          <a href="projects.html" class="link-arrow">All projects
+            <svg width="14" height="10" viewBox="0 0 14 10" fill="none" aria-hidden="true">
+              <path d="M1 5h12M13 5L9 1M13 5L9 9" stroke="currentColor" stroke-width="1.4" />
+            </svg>
+          </a>
+        </div>
+
+        <div class="work-grid">
+          <a href="project-single.html" class="project-card reveal">
+            <div class="project-card__media">
+              <span class="project-card__tag">Residential</span>
+              <img data-swappable src="assets/images/scene-p1.svg" alt="The Gulberg Residence living space">
+            </div>
+            <div class="project-card__body">
+              <h3 class="project-card__title">The Gulberg Residence</h3>
+              <span class="project-card__meta">Lahore · 2025</span>
+            </div>
+          </a>
+          <a href="project-single.html" class="project-card reveal reveal-delay-1">
+            <div class="project-card__media">
+              <span class="project-card__tag">Commercial</span>
+              <img data-swappable src="assets/images/scene-p2.svg" alt="A calm, light-filled reception interior">
+            </div>
+            <div class="project-card__body">
+              <h3 class="project-card__title">Maven Workspace</h3>
+              <span class="project-card__meta">Lahore · 2024</span>
+            </div>
+          </a>
+          <a href="project-single.html" class="project-card reveal reveal-delay-2">
+            <div class="project-card__media">
+              <span class="project-card__tag">Hospitality</span>
+              <img data-swappable src="assets/images/scene-p3.svg" alt="A boutique hotel suite interior">
+            </div>
+            <div class="project-card__body">
+              <h3 class="project-card__title">Saffron Boutique Hotel</h3>
+              <span class="project-card__meta">Islamabad · 2024</span>
+            </div>
+          </a>
+          <a href="project-single.html" class="project-card reveal reveal-delay-1">
+            <div class="project-card__media">
+              <span class="project-card__tag">Residential</span>
+              <img data-swappable src="assets/images/scene-p4.svg" alt="A serene bedroom interior">
+            </div>
+            <div class="project-card__body">
+              <h3 class="project-card__title">The Canal House</h3>
+              <span class="project-card__meta">Lahore · 2023</span>
+            </div>
+          </a>
+        </div>
+      </div>
+    </section>
+
+    <!-- ===================== FULL-BLEED SHOWCASE ===================== -->
+    <section class="showcase">
+      <!-- To use a real photo: replace src below with your image path (recommended 1600px wide). -->
+      <img class="showcase__img" data-swappable src="assets/images/photos/interior-showcase.jpg"
+        onerror="this.onerror=null;this.src='assets/images/scene-dark.svg'"
+        alt="A warm, dimly lit living room with wood paneling at dusk">
+      <div class="showcase__veil"></div>
+      <div class="container showcase__inner reveal">
+        <span class="showcase__eyebrow">Our philosophy</span>
+        <h2 class="showcase__title">Light, shadow, and the <em>space between.</em></h2>
+        <p class="showcase__text">
+          We design for the way a room feels at dusk as much as at noon —
+          where materials catch the light, and quiet corners invite you to stay.
+        </p>
+        <a href="projects.html" class="btn btn--primary btn--lg showcase__cta">
+          Explore our work
+          <svg width="14" height="10" viewBox="0 0 14 10" fill="none" aria-hidden="true">
+            <path d="M1 5h12M13 5L9 1M13 5L9 9" stroke="currentColor" stroke-width="1.4" />
+          </svg>
+        </a>
+      </div>
+      <span class="showcase__meta">The Hilltop Residence — Islamabad</span>
+    </section>
+    <section class="section process">
+      <div class="container process__inner">
+        <div class="process__head reveal">
+          <span class="eyebrow">How we work</span>
+          <h2 class="block-head__title">From first <span class="accent-word">conversation</span> to final styling.</h2>
+          <p class="lead" style="margin-top: var(--s-5);">A clear, four-step process so you always know where your
+            project stands.</p>
+          <a href="estimate.html" class="btn btn--dark btn--lg" style="margin-top: var(--s-6);">
+            Estimate your project
+            <svg width="14" height="10" viewBox="0 0 14 10" fill="none" aria-hidden="true">
+              <path d="M1 5h12M13 5L9 1M13 5L9 9" stroke="currentColor" stroke-width="1.4" />
+            </svg>
+          </a>
+        </div>
+        <ol class="process__steps">
+          <li class="process__step reveal">
+            <span class="process__step-num">01</span>
+            <div>
+              <h3 class="process__step-title">Discovery</h3>
+              <p class="process__step-desc">We talk through how you live, what you love, and what the space needs to do.
+                We listen more than we pitch.</p>
+            </div>
+          </li>
+          <li class="process__step reveal reveal-delay-1">
+            <span class="process__step-num">02</span>
+            <div>
+              <h3 class="process__step-title">Concept</h3>
+              <p class="process__step-desc">Mood, layout, and material direction — presented as a single, coherent
+                vision you can see and feel before we build.</p>
+            </div>
+          </li>
+          <li class="process__step reveal reveal-delay-2">
+            <span class="process__step-num">03</span>
+            <div>
+              <h3 class="process__step-title">Design &amp; detail</h3>
+              <p class="process__step-desc">Drawings, specifications, and sourcing. Every finish, fixture, and dimension
+                resolved before a single wall moves.</p>
+            </div>
+          </li>
+          <li class="process__step reveal reveal-delay-3">
+            <span class="process__step-num">04</span>
+            <div>
+              <h3 class="process__step-title">Delivery &amp; styling</h3>
+              <p class="process__step-desc">We manage the build, install the furnishings, and style the final layer —
+                then hand you the keys to a finished room.</p>
+            </div>
+          </li>
+        </ol>
+      </div>
+    </section>
+
+    <!-- ===================== TESTIMONIAL ===================== -->
+    <section class="section quote-block">
+      <div class="container container--narrow">
+        <blockquote class="quote reveal">
+          <p class="quote__text">They understood the way we wanted to <em class="accent-word">live</em> before we could
+            put it into words — and then built exactly that.</p>
+          <footer class="quote__cite">
+            <span class="quote__name">Ayesha &amp; Bilal Rahman</span>
+            <span class="quote__role">The Gulberg Residence</span>
+          </footer>
+        </blockquote>
+      </div>
+    </section>
+
+    <!-- ===================== CTA BAND ===================== -->
+    <section class="cta-band">
+      <div class="container cta-band__inner reveal">
+        <div>
+          <h2 class="cta-band__title">Have a space in <span class="accent-word">mind?</span></h2>
+          <p class="cta-band__sub">Tell us about your project and get an instant ballpark estimate — no email wall, no
+            waiting.</p>
+        </div>
+        <div class="cta-band__actions">
+          <button type="button" class="btn btn--primary btn--lg" data-open-modal="inquiry-modal">
+            Start a project
+            <svg width="14" height="10" viewBox="0 0 14 10" fill="none" aria-hidden="true">
+              <path d="M1 5h12M13 5L9 1M13 5L9 9" stroke="currentColor" stroke-width="1.4" />
+            </svg>
+          </button>
+          <button class="btn btn--outline btn--lg" data-open-modal="estimator-modal"
+            style="border-color: rgba(242,240,233,0.4); color: var(--paper);">
+            Quick estimate
+          </button>
+        </div>
+      </div>
+    </section>
+
+  </main>
+
+  <!-- ===================== FOOTER ===================== -->
+  <footer class="footer">
+    <div class="container">
+      <div class="footer__top">
+        <div>
+          <div class="footer__brand">Liag<span class="footer__brand-dot" aria-hidden="true"></span></div>
+          <p class="footer__tagline">An interior design studio shaping warm, considered spaces since 2009.</p>
+        </div>
+        <div>
+          <h4 class="footer__col-title">Studio</h4>
+          <ul class="footer__list">
+            <li><a href="about.html">About</a></li>
+            <li><a href="services.html">Services</a></li>
+            <li><a href="projects.html">Projects</a></li>
+            <li><a href="blog.html">Journal</a></li>
+          </ul>
+        </div>
+        <div>
+          <h4 class="footer__col-title">Connect</h4>
+          <ul class="footer__list">
+            <li><a href="contact.html">Contact</a></li>
+            <li><a href="estimate.html">Start a project</a></li>
+            <li><a href="#">Instagram</a></li>
+            <li><a href="#">Pinterest</a></li>
+          </ul>
+        </div>
+        <div>
+          <h4 class="footer__col-title">Studio</h4>
+          <ul class="footer__list">
+            <li>12 Mall Road</li>
+            <li>Kerala, India</li>
+            <li>hello@liag.studio</li>
+            <li>+91 420 000 0000</li>
+          </ul>
+        </div>
+      </div>
+
+      <div class="footer__variants">
+        <a href="index.html" aria-current="page">01 · Interior</a>
+        <a href="architecture.html">02 · Architecture</a>
+        <a href="portfolio.html">03 · Portfolio</a>
+        <a href="studio.html">04 · Design-Build</a>
+      </div>
+
+      <div class="footer__bottom">
+        <span>© <span data-year>2026</span> Dubase Studio</span>
+
+      </div>
+    </div>
+  </footer>
+
+  <!-- ===================== ESTIMATOR POPUP (shared component) ===================== -->
+  <div class="modal" id="estimator-modal" aria-hidden="true">
+    <div class="modal__overlay" data-modal-close></div>
+    <div class="modal__panel" role="dialog" aria-modal="true" aria-label="Quick project estimate">
+      <button class="modal__close" data-modal-close aria-label="Close">&times;</button>
+
+      <div class="estimator" data-estimator>
+        <div class="estimator__progress" aria-hidden="true">
+          <span class="estimator__pip"></span>
+          <span class="estimator__pip"></span>
+          <span class="estimator__pip"></span>
+          <span class="estimator__pip"></span>
+        </div>
+
+        <div data-est-steps>
+          <!-- Step 1: project type -->
+          <div class="estimator__step is-active">
+            <span class="estimator__step-label">Step 01 / 04</span>
+            <h3 class="estimator__step-title">What kind of <em>project</em> is it?</h3>
+            <div class="opt-grid opt-grid--2">
+              <label class="opt"><input type="radio" name="m-type" value="residential" data-est="type" checked><span
+                  class="opt__title">Residential</span><span class="opt__desc">A home, apartment, or single
+                  room.</span></label>
+              <label class="opt"><input type="radio" name="m-type" value="commercial" data-est="type"><span
+                  class="opt__title">Commercial</span><span class="opt__desc">Office, retail, or
+                  workspace.</span></label>
+              <label class="opt"><input type="radio" name="m-type" value="renovation" data-est="type"><span
+                  class="opt__title">Renovation</span><span class="opt__desc">Reworking an existing
+                  space.</span></label>
+              <label class="opt"><input type="radio" name="m-type" value="newbuild" data-est="type"><span
+                  class="opt__title">New build</span><span class="opt__desc">Designing from a blank
+                  shell.</span></label>
+            </div>
+          </div>
+
+          <!-- Step 2: area + scope -->
+          <div class="estimator__step">
+            <span class="estimator__step-label">Step 02 / 04</span>
+            <h3 class="estimator__step-title">How <em>large</em> is the space?</h3>
+            <div class="range-row">
+              <input type="range" min="150" max="5000" step="50" value="800" data-est="area"
+                aria-label="Area in square feet">
+              <span class="range-val" data-est-area-label>800 <span>sq ft</span></span>
+            </div>
+            <p class="estimator__step-label" style="margin-top: var(--s-6);">Scope of work</p>
+            <div class="opt-grid opt-grid--3" style="margin-top: var(--s-3);">
+              <label class="opt"><input type="radio" name="m-scope" value="consultation" data-est="scope"><span
+                  class="opt__title">Consult</span><span class="opt__price">From 25%</span></label>
+              <label class="opt"><input type="radio" name="m-scope" value="partial" data-est="scope"><span
+                  class="opt__title">Partial</span><span class="opt__price">From 65%</span></label>
+              <label class="opt"><input type="radio" name="m-scope" value="full" data-est="scope" checked><span
+                  class="opt__title">Full</span><span class="opt__price">Complete</span></label>
+            </div>
+          </div>
+
+          <!-- Step 3: finish level -->
+          <div class="estimator__step">
+            <span class="estimator__step-label">Step 03 / 04</span>
+            <h3 class="estimator__step-title">What <em>finish</em> level?</h3>
+            <div class="opt-grid">
+              <label class="opt"><input type="radio" name="m-finish" value="essential" data-est="finish"><span
+                  class="opt__title">Essential</span><span class="opt__desc">Clean, durable, considered — value-focused
+                  materials.</span></label>
+              <label class="opt"><input type="radio" name="m-finish" value="premium" data-est="finish" checked><span
+                  class="opt__title">Premium</span><span class="opt__desc">Elevated finishes, custom joinery, designer
+                  pieces.</span></label>
+              <label class="opt"><input type="radio" name="m-finish" value="luxury" data-est="finish"><span
+                  class="opt__title">Luxury</span><span class="opt__desc">Bespoke throughout — rare materials,
+                  made-to-order.</span></label>
+            </div>
+            <div class="estimate-readout">
+              <span class="estimate-readout__label">Estimated range</span>
+              <span class="estimate-readout__value" data-est-readout>—</span>
+            </div>
+          </div>
+
+          <!-- Step 4: contact -->
+          <div class="estimator__step">
+            <span class="estimator__step-label">Step 04 / 04</span>
+            <h3 class="estimator__step-title">Where do we <em>send</em> it?</h3>
+            <div class="stack">
+              <div class="field">
+                <label class="field__label" for="m-name">Name <span class="req">*</span></label>
+                <input class="field__input" id="m-name" type="text" required data-est="name" placeholder="Your name">
+                <span class="field-error">Please enter your name</span>
+              </div>
+              <div class="field">
+                <label class="field__label" for="m-email">Email <span class="req">*</span></label>
+                <input class="field__input" id="m-email" type="email" required data-est="email"
+                  placeholder="you@example.com">
+                <span class="field-error">Please enter a valid email</span>
+              </div>
+            </div>
+            <div class="estimate-readout">
+              <span class="estimate-readout__label">Your estimate</span>
+              <span class="estimate-readout__value" data-est-readout>—</span>
+            </div>
+          </div>
+        </div>
+
+        <div class="estimator__nav">
+          <button class="btn btn--ghost" data-est-prev>Back</button>
+          <button class="btn btn--primary" data-est-next>Continue</button>
+        </div>
+
+        <!-- Success -->
+        <div class="estimator__success">
+          <div class="estimator__success-icon" aria-hidden="true">
+            <svg width="28" height="28" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5">
+              <polyline points="20 6 9 17 4 12" />
+            </svg>
+          </div>
+          <h3 class="estimator__step-title" style="margin-bottom: var(--s-3);">Request <em>received.</em></h3>
+          <p class="lead" style="margin-bottom: var(--s-5);">Your estimated range is <strong data-est-final>—</strong>.
+            We'll be in touch within one working day to talk through the details.</p>
+          <a href="projects.html" class="btn btn--dark">Meanwhile, see our work</a>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <script src="assets/js/main.js"></script>
+
+  <!-- ===================== PROJECT INQUIRY POPUP ===================== -->
+  <div class="modal" id="inquiry-modal" aria-hidden="true">
+    <div class="modal__overlay" data-modal-close></div>
+    <div class="modal__panel" role="dialog" aria-modal="true" aria-label="Start a project">
+      <button class="modal__close" data-modal-close aria-label="Close">&times;</button>
+      <div class="estimator" data-inquiry>
+        <div class="estimator__progress" aria-hidden="true">
+          <span class="estimator__pip"></span><span class="estimator__pip"></span>
+          <span class="estimator__pip"></span><span class="estimator__pip"></span>
+        </div>
+        <div data-inq-steps>
+          <div class="estimator__step is-active">
+            <span class="estimator__step-label">Step 01 / 04</span>
+            <h3 class="estimator__step-title">What can we <em>help</em> with?</h3>
+            <div class="opt-grid opt-grid--2">
+              <label class="opt"><input type="radio" name="i-type" value="architecture" data-inq="type" checked><span
+                  class="opt__title">Architecture</span><span class="opt__desc">A new building or
+                  extension.</span></label>
+              <label class="opt"><input type="radio" name="i-type" value="interior" data-inq="type"><span
+                  class="opt__title">Interior design</span><span class="opt__desc">Designing an existing
+                  space.</span></label>
+              <label class="opt"><input type="radio" name="i-type" value="both" data-inq="type"><span
+                  class="opt__title">Both</span><span class="opt__desc">Structure and interior together.</span></label>
+              <label class="opt"><input type="radio" name="i-type" value="consult" data-inq="type"><span
+                  class="opt__title">Consultation</span><span class="opt__desc">Advice or a second
+                  opinion.</span></label>
+            </div>
+          </div>
+          <div class="estimator__step">
+            <span class="estimator__step-label">Step 02 / 04</span>
+            <h3 class="estimator__step-title">Rough <em>budget</em>?</h3>
+            <div class="opt-grid opt-grid--2">
+              <label class="opt"><input type="radio" name="i-budget" value="lt50" data-inq="budget" checked><span
+                  class="opt__title">Under $50k</span></label>
+              <label class="opt"><input type="radio" name="i-budget" value="50-150" data-inq="budget"><span
+                  class="opt__title">$50k – $150k</span></label>
+              <label class="opt"><input type="radio" name="i-budget" value="150-500" data-inq="budget"><span
+                  class="opt__title">$150k – $500k</span></label>
+              <label class="opt"><input type="radio" name="i-budget" value="gt500" data-inq="budget"><span
+                  class="opt__title">$500k+</span></label>
+            </div>
+            <p class="estimator__step-label" style="margin-top:var(--s-6);">Timeline</p>
+            <div class="opt-grid opt-grid--3" style="margin-top:var(--s-3);">
+              <label class="opt"><input type="radio" name="i-time" value="asap" data-inq="timeline" checked><span
+                  class="opt__title">ASAP</span></label>
+              <label class="opt"><input type="radio" name="i-time" value="3-6m" data-inq="timeline"><span
+                  class="opt__title">3–6 months</span></label>
+              <label class="opt"><input type="radio" name="i-time" value="exploring" data-inq="timeline"><span
+                  class="opt__title">Exploring</span></label>
+            </div>
+          </div>
+          <div class="estimator__step">
+            <span class="estimator__step-label">Step 03 / 04</span>
+            <h3 class="estimator__step-title">Tell us <em>more</em>.</h3>
+            <div class="field">
+              <label class="field__label" for="i-msg">Project details</label>
+              <textarea class="field__input" id="i-msg" rows="5" data-inq="message"
+                placeholder="Location, size, what you have in mind..."></textarea>
+            </div>
+          </div>
+          <div class="estimator__step">
+            <span class="estimator__step-label">Step 04 / 04</span>
+            <h3 class="estimator__step-title">Where do we <em>reach</em> you?</h3>
+            <div class="stack">
+              <div class="field">
+                <label class="field__label" for="i-name">Name <span class="req">*</span></label>
+                <input class="field__input" id="i-name" type="text" required data-inq="name" placeholder="Your name">
+                <span class="field-error">Please enter your name</span>
+              </div>
+              <div class="field">
+                <label class="field__label" for="i-email">Email <span class="req">*</span></label>
+                <input class="field__input" id="i-email" type="email" required data-inq="email"
+                  placeholder="you@example.com">
+                <span class="field-error">Please enter a valid email</span>
+              </div>
+            </div>
+            <div class="estimate-readout">
+              <span class="estimate-readout__label">Your request</span>
+              <span class="estimate-readout__value" data-inq-summary
+                style="font-size:0.9rem;display:flex;gap:10px;flex-wrap:wrap;"></span>
+            </div>
+          </div>
+        </div>
+        <div class="estimator__nav">
+          <button class="btn btn--ghost" data-inq-prev>Back</button>
+          <button class="btn btn--primary" data-inq-next>Continue</button>
+        </div>
+        <div class="estimator__success">
+          <div class="estimator__success-icon" aria-hidden="true">
+            <svg width="28" height="28" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5">
+              <polyline points="20 6 9 17 4 12" />
+            </svg>
+          </div>
+          <h3 class="estimator__step-title" style="margin-bottom:var(--s-3);">Request <em>sent.</em></h3>
+          <p class="lead" style="margin-bottom:var(--s-5);">Thanks — we've got your project details and will be in touch
+            within one working day.</p>
+          <button class="btn btn--dark" data-modal-close>Close</button>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <!-- ===================== CUSTOMIZER PANEL (demo) ===================== -->
+  <aside class="customizer" data-customizer aria-label="Theme customizer">
+    <button class="customizer__toggle" data-cz-toggle aria-label="Customize theme">
+      <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6">
+        <circle cx="12" cy="12" r="3" />
+        <path d="M12 1v4M12 19v4M4.2 4.2l2.8 2.8M17 17l2.8 2.8M1 12h4M19 12h4M4.2 19.8l2.8-2.8M17 7l2.8-2.8" />
+      </svg>
+    </button>
+    <div class="customizer__body" data-cz-body>
+      <p class="customizer__title">Accent colour</p>
+      <div class="customizer__row">
+        <div class="customizer__swatches">
+          <button class="cz-swatch" data-cz-accent="#2f6fb0" data-cz-accent-deep="#245a93" style="background:#2f6fb0"
+            aria-label="Azure"></button>
+          <button class="cz-swatch" data-cz-accent="#b5622f" data-cz-accent-deep="#944c22" style="background:#b5622f"
+            aria-label="Clay"></button>
+          <button class="cz-swatch" data-cz-accent="#9c6b43" data-cz-accent-deep="#7e5433" style="background:#9c6b43"
+            aria-label="Bronze"></button>
+          <button class="cz-swatch" data-cz-accent="#5e7c5a" data-cz-accent-deep="#4a6347" style="background:#5e7c5a"
+            aria-label="Sage"></button>
+          <button class="cz-swatch" data-cz-accent="#8a5a7a" data-cz-accent-deep="#6f4762" style="background:#8a5a7a"
+            aria-label="Plum"></button>
+          <button class="cz-swatch" data-cz-accent="#3f3f46" data-cz-accent-deep="#2c2c31" style="background:#3f3f46"
+            aria-label="Graphite"></button>
+        </div>
+      </div>
+      <p class="customizer__title">Appearance</p>
+      <div class="customizer__row">
+        <button class="customizer__dark" data-cz-dark>
+          <span data-cz-dark-label>Dark mode</span>
+          <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6">
+            <path d="M21 12.8A9 9 0 1111.2 3 7 7 0 0021 12.8z" />
+          </svg>
+        </button>
+      </div>
+      <p class="customizer__title">Header</p>
+      <div class="customizer__row">
+        <button class="customizer__dark" data-cz-sticky>
+          <span data-cz-sticky-label>Sticky header</span>
+          <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6">
+            <path d="M4 6h16M4 12h16M4 18h10" />
+          </svg>
+        </button>
+      </div>
+      <p class="customizer__title">Demo images</p>
+      <div class="customizer__row">
+        <button class="customizer__dark" data-imgswap-toggle>
+          <span data-imgswap-label>Try your images</span>
+          <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6">
+            <path d="M21 15v4a2 2 0 01-2 2H5a2 2 0 01-2-2v-4" />
+            <polyline points="17 8 12 3 7 8" />
+            <line x1="12" y1="3" x2="12" y2="15" />
+          </svg>
+        </button>
+      </div>
+      <p class="customizer__note">Live demo — shows how easily the theme recolours. Set defaults in root.css.</p>
+    </div>
+  </aside>
+
+</body>
+
+
+</html>

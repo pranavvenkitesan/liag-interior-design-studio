@@ -1,0 +1,50 @@
+<svg viewBox="0 0 1200 800" fill="none" xmlns="http://www.w3.org/2000/svg" preserveAspectRatio="xMidYMid slice" role="img" aria-label="The same room, finished and styled">
+<defs>
+<linearGradient id="fnwall" x1="0" y1="0" x2="0" y2="1"><stop offset="0" stop-color="#efe9dd"/><stop offset="1" stop-color="#e4ddd0"/></linearGradient>
+<linearGradient id="fnfloor" x1="0" y1="0" x2="0" y2="1"><stop offset="0" stop-color="#c9bfae"/><stop offset="1" stop-color="#b3a994"/></linearGradient>
+<linearGradient id="fnsofa" x1="0" y1="0" x2="0" y2="1"><stop offset="0" stop-color="#9c6b43"/><stop offset="1" stop-color="#7e5433"/></linearGradient>
+<linearGradient id="fnwin" x1="0" y1="0" x2="0" y2="1"><stop offset="0" stop-color="#f6efe2"/><stop offset="1" stop-color="#e9d7b8"/></linearGradient>
+</defs>
+<rect width="1200" height="800" fill="url(#fnwall)"/>
+<!-- warm floor (wood) -->
+<rect y="640" width="1200" height="160" fill="url(#fnfloor)"/>
+<line x1="0" y1="640" x2="1200" y2="640" stroke="#a89e8d" stroke-width="2"/>
+<g stroke="#b3a994" stroke-width="1.5" opacity="0.5"><line x1="300" y1="640" x2="260" y2="800"/><line x1="600" y1="640" x2="570" y2="800"/><line x1="900" y1="640" x2="880" y2="800"/></g>
+<!-- window WITH warm light + curtains (same position as shell) -->
+<rect x="240" y="160" width="340" height="420" fill="url(#fnwin)" stroke="#8a8073" stroke-width="8"/>
+<line x1="410" y1="160" x2="410" y2="580" stroke="#8a8073" stroke-width="5"/>
+<line x1="240" y1="370" x2="580" y2="370" stroke="#8a8073" stroke-width="5"/>
+<rect x="240" y="160" width="60" height="420" fill="#ddd6c9" opacity="0.7"/>
+<rect x="520" y="160" width="60" height="420" fill="#ddd6c9" opacity="0.7"/>
+<!-- warm light spill -->
+<path d="M260 580 L560 580 L640 720 L200 720 Z" fill="#9c6b43" opacity="0.10"/>
+<!-- artwork on right wall -->
+<rect x="760" y="200" width="160" height="200" fill="#f0ece2" stroke="#8a8073" stroke-width="5"/>
+<path d="M785 360 L835 290 L875 340 L905 250 L905 380 L785 380 Z" fill="#9c6b43" opacity="0.4"/>
+<!-- shelving -->
+<rect x="980" y="240" width="120" height="300" fill="#6e6559"/>
+<line x1="980" y1="320" x2="1100" y2="320" stroke="#8a8073" stroke-width="3"/><line x1="980" y1="420" x2="1100" y2="420" stroke="#8a8073" stroke-width="3"/>
+<rect x="995" y="260" width="14" height="50" fill="#9c6b43"/><rect x="1015" y="270" width="10" height="40" fill="#b9b1a3"/>
+<rect x="995" y="350" width="60" height="14" fill="#b9b1a3"/>
+<!-- sofa -->
+<rect x="320" y="540" width="380" height="110" rx="14" fill="url(#fnsofa)"/>
+<rect x="316" y="510" width="388" height="56" rx="16" fill="#b08755"/>
+<rect x="300" y="530" width="46" height="120" rx="14" fill="#7e5433"/><rect x="674" y="530" width="46" height="120" rx="14" fill="#7e5433"/>
+<rect x="350" y="522" width="76" height="64" rx="10" fill="#ddd6c9"/><rect x="450" y="522" width="76" height="64" rx="10" fill="#c9bfae"/><rect x="550" y="522" width="76" height="64" rx="10" fill="#ddd6c9"/>
+<!-- coffee table -->
+<ellipse cx="510" cy="700" rx="130" ry="24" fill="#6e6559"/>
+<rect x="482" y="700" width="7" height="36" fill="#534b41"/><rect x="534" y="700" width="7" height="36" fill="#534b41"/>
+<!-- floor lamp -->
+<line x1="780" y1="640" x2="780" y2="500" stroke="#534b41" stroke-width="5"/>
+<path d="M752 500 h56 l-10 -40 h-36 z" fill="#9c6b43"/>
+<ellipse cx="780" cy="470" rx="56" ry="28" fill="#9c6b43" opacity="0.14"/>
+<!-- plant -->
+<rect x="1010" y="560" width="56" height="80" fill="#534b41"/>
+<path d="M1038 560 q-30 -80 -10 -140" stroke="#9c6b43" stroke-width="6" fill="none" stroke-linecap="round"/>
+<path d="M1038 560 q30 -70 15 -130" stroke="#6e6559" stroke-width="6" fill="none" stroke-linecap="round"/>
+<ellipse cx="1023" cy="415" rx="18" ry="38" fill="#9c6b43" opacity="0.8" transform="rotate(-22 1023 415)"/>
+<ellipse cx="1056" cy="430" rx="18" ry="38" fill="#6e6559" opacity="0.75" transform="rotate(20 1056 430)"/>
+<!-- rug -->
+<ellipse cx="510" cy="710" rx="260" ry="50" fill="#9c6b43" opacity="0.12"/>
+<text x="410" y="624" fill="#7e5433" opacity="0.6" font-family="monospace" font-size="18" text-anchor="middle">styling</text>
+</svg>

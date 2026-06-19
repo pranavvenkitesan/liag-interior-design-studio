@@ -1,0 +1,117 @@
+<svg viewBox="0 0 1920 1080" fill="none" xmlns="http://www.w3.org/2000/svg" preserveAspectRatio="xMidYMid slice" role="img" aria-label="Modern architectural building, wide view">
+  <defs>
+    <linearGradient id="hsky" x1="0" y1="0" x2="0" y2="1">
+      <stop offset="0" stop-color="#efe4d3"/>
+      <stop offset="1" stop-color="#e2d3bb"/>
+    </linearGradient>
+    <linearGradient id="hlight" x1="0" y1="0" x2="0" y2="1">
+      <stop offset="0" stop-color="#e9dcc7"/>
+      <stop offset="1" stop-color="#d4c0a2"/>
+    </linearGradient>
+    <linearGradient id="hmid" x1="0" y1="0" x2="0" y2="1">
+      <stop offset="0" stop-color="#b8966a"/>
+      <stop offset="1" stop-color="#9a774d"/>
+    </linearGradient>
+    <linearGradient id="hdark" x1="0" y1="0" x2="0" y2="1">
+      <stop offset="0" stop-color="#6b5640"/>
+      <stop offset="1" stop-color="#4a3a2a"/>
+    </linearGradient>
+    <linearGradient id="hglass" x1="0" y1="0" x2="1" y2="1">
+      <stop offset="0" stop-color="#cdbfa8"/>
+      <stop offset="0.5" stop-color="#a98860"/>
+      <stop offset="1" stop-color="#8c6d49"/>
+    </linearGradient>
+  </defs>
+
+  <rect width="1920" height="1080" fill="url(#hsky)"/>
+  <!-- soft sun wash, upper right -->
+  <circle cx="1500" cy="240" r="420" fill="#ffffff" opacity="0.18"/>
+
+  <!-- blueprint grid, faint, full width -->
+  <g stroke="#9a774d" stroke-width="1" opacity="0.10">
+    <line x1="0" y1="180" x2="1920" y2="180"/><line x1="0" y1="360" x2="1920" y2="360"/>
+    <line x1="0" y1="540" x2="1920" y2="540"/><line x1="0" y1="720" x2="1920" y2="720"/>
+    <line x1="240" y1="0" x2="240" y2="1080"/><line x1="480" y1="0" x2="480" y2="1080"/>
+    <line x1="720" y1="0" x2="720" y2="1080"/><line x1="960" y1="0" x2="960" y2="1080"/>
+    <line x1="1200" y1="0" x2="1200" y2="1080"/><line x1="1440" y1="0" x2="1440" y2="1080"/><line x1="1680" y1="0" x2="1680" y2="1080"/>
+  </g>
+
+  <!-- ground -->
+  <rect y="880" width="1920" height="200" fill="#d8c4a8"/>
+  <rect y="880" width="1920" height="5" fill="#b89668" opacity="0.5"/>
+
+  <!-- ============ BUILDING CLUSTER (right 2/3, left side open for text) ============ -->
+
+  <!-- far slender tower (mid-right) -->
+  <g>
+    <rect x="900" y="220" width="200" height="660" fill="url(#hlight)"/>
+    <g stroke="#c4a878" stroke-width="2" opacity="0.6">
+      <line x1="940" y1="220" x2="940" y2="880"/><line x1="980" y1="220" x2="980" y2="880"/>
+      <line x1="1020" y1="220" x2="1020" y2="880"/><line x1="1060" y1="220" x2="1060" y2="880"/>
+    </g>
+    <g stroke="#b89668" stroke-width="1.5" opacity="0.45">
+      <line x1="900" y1="320" x2="1100" y2="320"/><line x1="900" y1="420" x2="1100" y2="420"/>
+      <line x1="900" y1="520" x2="1100" y2="520"/><line x1="900" y1="620" x2="1100" y2="620"/><line x1="900" y1="720" x2="1100" y2="720"/>
+    </g>
+    <rect x="960" y="190" width="40" height="30" fill="#2c2218"/>
+  </g>
+
+  <!-- main hero mass (center-right) -->
+  <g>
+    <rect x="1080" y="340" width="520" height="540" fill="url(#hmid)"/>
+    <!-- shadow return -->
+    <polygon points="1600,340 1700,392 1700,880 1600,880" fill="url(#hdark)"/>
+    <!-- curtain wall glazing -->
+    <rect x="1130" y="420" width="420" height="460" fill="url(#hglass)" opacity="0.92"/>
+    <g stroke="#4a3a2a" stroke-width="3" opacity="0.85">
+      <line x1="1235" y1="420" x2="1235" y2="880"/><line x1="1340" y1="420" x2="1340" y2="880"/><line x1="1445" y1="420" x2="1445" y2="880"/>
+      <line x1="1130" y1="520" x2="1550" y2="520"/><line x1="1130" y1="620" x2="1550" y2="620"/>
+      <line x1="1130" y1="720" x2="1550" y2="720"/><line x1="1130" y1="820" x2="1550" y2="820"/>
+    </g>
+    <!-- glass reflections -->
+    <polygon points="1130,420 1230,420 1170,880 1130,880" fill="#ffffff" opacity="0.10"/>
+    <polygon points="1330,420 1380,420 1330,880 1290,880" fill="#ffffff" opacity="0.06"/>
+    <rect x="1130" y="420" width="420" height="460" fill="none" stroke="#2c2218" stroke-width="3"/>
+    <!-- cantilever cap -->
+    <rect x="1060" y="300" width="560" height="56" fill="#2c2218"/>
+    <rect x="1060" y="292" width="560" height="9" fill="#b5622f"/>
+  </g>
+
+  <!-- foreground low pavilion (far right, dark) -->
+  <g>
+    <rect x="1560" y="640" width="300" height="240" fill="url(#hdark)"/>
+    <g fill="#e9cfa0" opacity="0.9">
+      <rect x="1595" y="700" width="60" height="84"/><rect x="1675" y="700" width="60" height="84"/><rect x="1755" y="700" width="60" height="84"/>
+    </g>
+    <rect x="1675" y="700" width="60" height="84" fill="#c87a3e" opacity="0.85"/>
+    <rect x="1660" y="800" width="74" height="80" fill="#1a140d"/>
+    <rect x="1544" y="624" width="332" height="18" fill="#2c2218"/>
+  </g>
+
+  <!-- entry steps -->
+  <g fill="#c4a878">
+    <rect x="1130" y="846" width="420" height="12"/>
+    <rect x="1108" y="858" width="464" height="12" fill="#b89668"/>
+    <rect x="1086" y="870" width="508" height="12" fill="#a8835c"/>
+  </g>
+
+  <!-- single slender tree (far left, doesn't crowd text) -->
+  <g>
+    <line x1="150" y1="880" x2="150" y2="700" stroke="#4a3a2a" stroke-width="5" stroke-linecap="round"/>
+    <ellipse cx="150" cy="655" rx="54" ry="74" fill="#7a6047" opacity="0.5"/>
+    <ellipse cx="150" cy="655" rx="34" ry="50" fill="#9a774d" opacity="0.45"/>
+  </g>
+
+  <!-- scale figures near entry -->
+  <g fill="#2c2218" opacity="0.5">
+    <rect x="1230" y="844" width="8" height="40" rx="3"/><circle cx="1234" cy="839" r="5.5"/>
+    <rect x="1270" y="846" width="8" height="38" rx="3"/><circle cx="1274" cy="841" r="5.5"/>
+  </g>
+
+  <!-- dimension annotation over main mass -->
+  <g stroke="#9a774d" stroke-width="1.5" opacity="0.5">
+    <line x1="1080" y1="270" x2="1600" y2="270"/>
+    <line x1="1080" y1="262" x2="1080" y2="278"/><line x1="1600" y1="262" x2="1600" y2="278"/>
+  </g>
+  <text x="1340" y="262" fill="#9a774d" opacity="0.65" font-family="monospace" font-size="22" text-anchor="middle">38.0 m</text>
+</svg>

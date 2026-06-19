@@ -1,0 +1,14 @@
+<svg viewBox="0 0 200 200" fill="none" xmlns="http://www.w3.org/2000/svg" role="img" aria-label="Team member portrait">
+<rect width="200" height="200" fill="#6e6559"/>
+<!-- shoulders -->
+<path d="M40 200 Q40 150 100 150 Q160 150 160 200 Z" fill="#2c2218" opacity="0.25"/>
+<!-- neck -->
+<rect x="88" y="110" width="24" height="40" fill="#c9a578"/>
+<!-- head -->
+<ellipse cx="100" cy="84" rx="40" ry="46" fill="#c9a578"/>
+<!-- hair -->
+<path d="M54 64 Q54 32 100 32 Q146 32 146 64 L146 70 Q138 48 100 48 Q62 48 62 70 Z" fill="#2c2218"/><path d="M66 92 Q66 118 100 118 Q134 118 134 92 L134 86 Q120 96 100 96 Q80 96 66 86 Z" fill="#2c2218" opacity="0.85"/>
+<!-- features -->
+<circle cx="84" cy="84" r="3.4" fill="#2c2218"/><circle cx="116" cy="84" r="3.4" fill="#2c2218"/>
+<path d="M90 102 Q100 108 110 102" stroke="#2c2218" stroke-width="2.4" fill="none" stroke-linecap="round"/>
+</svg>

@@ -1,0 +1,110 @@
+<svg viewBox="0 0 800 1000" fill="none" xmlns="http://www.w3.org/2000/svg" role="img" aria-label="Illustrated living room interior">
+  <defs>
+    <linearGradient id="wall" x1="0" y1="0" x2="0" y2="1">
+      <stop offset="0" stop-color="#eef2f6"/>
+      <stop offset="1" stop-color="#dde5ec"/>
+    </linearGradient>
+    <linearGradient id="floor" x1="0" y1="0" x2="0" y2="1">
+      <stop offset="0" stop-color="#cfd8e2"/>
+      <stop offset="1" stop-color="#b7c3d0"/>
+    </linearGradient>
+    <linearGradient id="winlight" x1="0" y1="0" x2="0" y2="1">
+      <stop offset="0" stop-color="#dbe9f6"/>
+      <stop offset="1" stop-color="#a7c4e2"/>
+    </linearGradient>
+    <linearGradient id="sofa" x1="0" y1="0" x2="0" y2="1">
+      <stop offset="0" stop-color="#5a6b80"/>
+      <stop offset="1" stop-color="#46566b"/>
+    </linearGradient>
+    <radialGradient id="sun" cx="0.5" cy="0.4" r="0.7">
+      <stop offset="0" stop-color="#ffffff" stop-opacity="0.55"/>
+      <stop offset="1" stop-color="#ffffff" stop-opacity="0"/>
+    </radialGradient>
+  </defs>
+
+  <!-- Wall -->
+  <rect width="800" height="1000" fill="url(#wall)"/>
+  <!-- Floor -->
+  <rect y="760" width="800" height="240" fill="url(#floor)"/>
+  <line x1="0" y1="760" x2="800" y2="760" stroke="#9fb0c2" stroke-width="2"/>
+
+  <!-- Large window -->
+  <g>
+    <rect x="80" y="120" width="300" height="430" fill="url(#winlight)" stroke="#1b1f27" stroke-width="3"/>
+    <line x1="230" y1="120" x2="230" y2="550" stroke="#1b1f27" stroke-width="3"/>
+    <line x1="80" y1="335" x2="380" y2="335" stroke="#1b1f27" stroke-width="3"/>
+    <!-- sun glow -->
+    <rect x="83" y="123" width="294" height="424" fill="url(#sun)"/>
+    <!-- distant hills -->
+    <path d="M80 470 Q160 430 230 460 T380 450 V547 H80 Z" fill="#9dc0e0" opacity="0.6"/>
+  </g>
+
+  <!-- Light cast on floor -->
+  <path d="M120 760 L330 760 L400 870 L150 870 Z" fill="#ffffff" opacity="0.18"/>
+
+  <!-- Floor lamp (right of window) -->
+  <g stroke="#1b1f27" stroke-width="3" stroke-linecap="round">
+    <line x1="440" y1="300" x2="440" y2="760"/>
+    <path d="M412 300 H468 L458 250 H422 Z" fill="#2f6fb0" stroke="#1b1f27"/>
+    <ellipse cx="440" cy="762" rx="34" ry="8" fill="#46566b" stroke="none"/>
+  </g>
+  <!-- lamp glow -->
+  <ellipse cx="440" cy="270" rx="70" ry="50" fill="#2f6fb0" opacity="0.12"/>
+
+  <!-- Wall art (right) -->
+  <g>
+    <rect x="560" y="180" width="150" height="190" fill="#eef2f6" stroke="#1b1f27" stroke-width="3"/>
+    <path d="M575 330 L615 250 L645 300 L675 230 L695 330 Z" fill="#2f6fb0" opacity="0.5"/>
+    <circle cx="660" cy="215" r="12" fill="#2f6fb0"/>
+  </g>
+  <!-- small shelf under art -->
+  <rect x="560" y="410" width="150" height="10" fill="#46566b"/>
+  <rect x="585" y="375" width="14" height="35" fill="#586577"/>
+  <rect x="620" y="385" width="10" height="25" fill="#2f6fb0"/>
+
+  <!-- Sofa -->
+  <g>
+    <!-- back -->
+    <rect x="150" y="600" width="470" height="120" rx="20" fill="#46566b"/>
+    <!-- seat -->
+    <rect x="135" y="690" width="500" height="90" rx="18" fill="#5a6b80"/>
+    <!-- cushions -->
+    <rect x="175" y="615" width="130" height="95" rx="14" fill="#586577"/>
+    <rect x="320" y="615" width="130" height="95" rx="14" fill="#586577"/>
+    <rect x="465" y="615" width="130" height="95" rx="14" fill="#586577"/>
+    <!-- throw pillows -->
+    <rect x="200" y="650" width="70" height="70" rx="12" fill="#2f6fb0"/>
+    <rect x="500" y="650" width="70" height="70" rx="12" fill="#b2c2d1"/>
+    <!-- legs -->
+    <rect x="160" y="780" width="14" height="28" fill="#1b1f27"/>
+    <rect x="596" y="780" width="14" height="28" fill="#1b1f27"/>
+  </g>
+
+  <!-- Coffee table -->
+  <g>
+    <ellipse cx="385" cy="855" rx="120" ry="26" fill="#46566b"/>
+    <ellipse cx="385" cy="846" rx="120" ry="26" fill="#5a6b80"/>
+    <rect x="300" y="855" width="8" height="40" fill="#1b1f27"/>
+    <rect x="462" y="855" width="8" height="40" fill="#1b1f27"/>
+    <!-- vase on table -->
+    <path d="M375 800 Q370 830 380 846 L392 846 Q400 830 396 800 Z" fill="#2f6fb0"/>
+    <path d="M384 800 Q360 770 372 745" stroke="#586577" stroke-width="4" fill="none" stroke-linecap="round"/>
+    <path d="M388 800 Q410 775 400 750" stroke="#586577" stroke-width="4" fill="none" stroke-linecap="round"/>
+    <circle cx="372" cy="745" r="7" fill="#2f6fb0"/>
+    <circle cx="400" cy="750" r="7" fill="#b2c2d1"/>
+  </g>
+
+  <!-- Potted plant (left foreground) -->
+  <g>
+    <path d="M70 920 L110 920 L102 800 L78 800 Z" fill="#46566b"/>
+    <path d="M90 800 Q60 700 70 640" stroke="#2f6fb0" stroke-width="6" fill="none" stroke-linecap="round"/>
+    <path d="M90 800 Q120 710 112 650" stroke="#586577" stroke-width="6" fill="none" stroke-linecap="round"/>
+    <path d="M90 800 Q88 720 92 660" stroke="#5a6b80" stroke-width="6" fill="none" stroke-linecap="round"/>
+    <ellipse cx="70" cy="635" rx="22" ry="40" fill="#2f6fb0" opacity="0.85" transform="rotate(-25 70 635)"/>
+    <ellipse cx="112" cy="648" rx="22" ry="40" fill="#586577" opacity="0.85" transform="rotate(20 112 648)"/>
+    <ellipse cx="92" cy="655" rx="20" ry="38" fill="#5a6b80" opacity="0.85"/>
+  </g>
+
+  <!-- Rug -->
+  <ellipse cx="385" cy="900" rx="300" ry="50" fill="#b2c2d1" opacity="0.5"/>
+</svg>

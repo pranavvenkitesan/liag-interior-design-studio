@@ -1,0 +1,104 @@
+<svg viewBox="0 0 1600 900" fill="none" xmlns="http://www.w3.org/2000/svg" preserveAspectRatio="xMidYMid slice" role="img" aria-label="Dramatic dark interior with floor-to-ceiling windows and city view">
+  <defs>
+    <linearGradient id="dwall" x1="0" y1="0" x2="0" y2="1">
+      <stop offset="0" stop-color="#23272f"/>
+      <stop offset="1" stop-color="#181b21"/>
+    </linearGradient>
+    <linearGradient id="dsky" x1="0" y1="0" x2="0" y2="1">
+      <stop offset="0" stop-color="#2f4a6b"/>
+      <stop offset="0.55" stop-color="#3f6d93"/>
+      <stop offset="1" stop-color="#6a8fb0"/>
+    </linearGradient>
+    <linearGradient id="dfloor" x1="0" y1="0" x2="0" y2="1">
+      <stop offset="0" stop-color="#2a2e36"/>
+      <stop offset="1" stop-color="#1c1f25"/>
+    </linearGradient>
+    <radialGradient id="dglow" cx="0.18" cy="0.4" r="0.5">
+      <stop offset="0" stop-color="#9ec0e2" stop-opacity="0.28"/>
+      <stop offset="1" stop-color="#9ec0e2" stop-opacity="0"/>
+    </radialGradient>
+  </defs>
+
+  <!-- Wall -->
+  <rect width="1600" height="900" fill="url(#dwall)"/>
+  <!-- subtle wall texture lines -->
+  <g stroke="#2c313a" stroke-width="2" opacity="0.5">
+    <line x1="0" y1="220" x2="1600" y2="220"/>
+    <line x1="900" y1="0" x2="900" y2="700"/>
+  </g>
+
+  <!-- Floor (herringbone) -->
+  <rect y="700" width="1600" height="200" fill="url(#dfloor)"/>
+  <line x1="0" y1="700" x2="1600" y2="700" stroke="#11141a" stroke-width="3"/>
+  <g stroke="#343a44" stroke-width="2" opacity="0.7">
+    <!-- herringbone strokes -->
+    <g>
+      <path d="M40 720 l40 40 M80 720 l40 40 M120 720 l40 40 M160 720 l40 40 M200 720 l40 40 M240 720 l40 40 M280 720 l40 40 M320 720 l40 40 M360 720 l40 40 M400 720 l40 40 M440 720 l40 40 M480 720 l40 40 M520 720 l40 40 M560 720 l40 40 M600 720 l40 40 M640 720 l40 40 M680 720 l40 40 M720 720 l40 40 M760 720 l40 40 M800 720 l40 40 M840 720 l40 40 M880 720 l40 40 M920 720 l40 40 M960 720 l40 40 M1000 720 l40 40 M1040 720 l40 40 M1080 720 l40 40 M1120 720 l40 40 M1160 720 l40 40 M1200 720 l40 40 M1240 720 l40 40 M1280 720 l40 40 M1320 720 l40 40 M1360 720 l40 40 M1400 720 l40 40 M1440 720 l40 40 M1480 720 l40 40 M1520 720 l40 40 M1560 720 l40 40"/>
+      <path d="M40 800 l40 -40 M80 800 l40 -40 M120 800 l40 -40 M160 800 l40 -40 M200 800 l40 -40 M240 800 l40 -40 M280 800 l40 -40 M320 800 l40 -40 M360 800 l40 -40 M400 800 l40 -40 M440 800 l40 -40 M480 800 l40 -40 M520 800 l40 -40 M560 800 l40 -40 M600 800 l40 -40 M640 800 l40 -40 M680 800 l40 -40 M720 800 l40 -40 M760 800 l40 -40 M800 800 l40 -40 M840 800 l40 -40 M880 800 l40 -40 M920 800 l40 -40 M960 800 l40 -40 M1000 800 l40 -40 M1040 800 l40 -40 M1080 800 l40 -40 M1120 800 l40 -40 M1160 800 l40 -40 M1200 800 l40 -40 M1240 800 l40 -40 M1280 800 l40 -40 M1320 800 l40 -40 M1360 800 l40 -40 M1400 800 l40 -40 M1440 800 l40 -40 M1480 800 l40 -40 M1520 800 l40 -40 M1560 800 l40 -40"/>
+    </g>
+  </g>
+
+  <!-- Floor-to-ceiling windows (left) -->
+  <g>
+    <rect x="70" y="80" width="430" height="620" fill="url(#dsky)" stroke="#0f1217" stroke-width="6"/>
+    <!-- mullions -->
+    <line x1="285" y1="80" x2="285" y2="700" stroke="#0f1217" stroke-width="6"/>
+    <line x1="70" y1="300" x2="500" y2="300" stroke="#0f1217" stroke-width="5"/>
+    <line x1="70" y1="500" x2="500" y2="500" stroke="#0f1217" stroke-width="5"/>
+    <!-- city skyline silhouette -->
+    <g fill="#27435f" opacity="0.85">
+      <rect x="90" y="380" width="40" height="120"/>
+      <rect x="140" y="330" width="50" height="170"/>
+      <rect x="200" y="410" width="36" height="90"/>
+      <rect x="300" y="350" width="46" height="150"/>
+      <rect x="360" y="400" width="40" height="100"/>
+      <rect x="420" y="360" width="50" height="140"/>
+    </g>
+    <g fill="#1c3149" opacity="0.7">
+      <rect x="110" y="560" width="60" height="140"/>
+      <rect x="190" y="540" width="50" height="160"/>
+      <rect x="320" y="560" width="70" height="140"/>
+      <rect x="410" y="550" width="56" height="150"/>
+    </g>
+    <!-- window light spill on floor -->
+  </g>
+  <path d="M90 700 L500 700 L640 820 L150 820 Z" fill="url(#dglow)"/>
+
+  <!-- Large plant near windows -->
+  <g>
+    <path d="M520 860 L600 860 L588 720 L532 720 Z" fill="#15181d"/>
+    <path d="M560 720 Q500 580 520 480" stroke="#3f6d93" stroke-width="7" fill="none" stroke-linecap="round"/>
+    <path d="M560 720 Q620 600 605 500" stroke="#4f7ea3" stroke-width="7" fill="none" stroke-linecap="round"/>
+    <path d="M560 720 Q558 600 562 510" stroke="#5a6b80" stroke-width="7" fill="none" stroke-linecap="round"/>
+    <path d="M560 720 Q640 640 660 560" stroke="#3f6d93" stroke-width="6" fill="none" stroke-linecap="round"/>
+    <ellipse cx="520" cy="465" rx="26" ry="52" fill="#3f6d93" opacity="0.9" transform="rotate(-28 520 465)"/>
+    <ellipse cx="606" cy="486" rx="26" ry="52" fill="#4f7ea3" opacity="0.9" transform="rotate(24 606 486)"/>
+    <ellipse cx="562" cy="498" rx="24" ry="50" fill="#5a6b80" opacity="0.85"/>
+    <ellipse cx="660" cy="548" rx="22" ry="46" fill="#3f6d93" opacity="0.8" transform="rotate(46 660 548)"/>
+  </g>
+
+  <!-- Dining nook in shadow (right) -->
+  <g opacity="0.92">
+    <!-- framed art -->
+    <rect x="1180" y="150" width="90" height="120" fill="#1f242c" stroke="#3a4150" stroke-width="3"/>
+    <rect x="1285" y="150" width="90" height="120" fill="#1f242c" stroke="#3a4150" stroke-width="3"/>
+    <rect x="1198" y="172" width="54" height="76" fill="#3f6d93" opacity="0.4"/>
+    <rect x="1303" y="172" width="54" height="76" fill="#3f6d93" opacity="0.4"/>
+    <!-- sideboard -->
+    <rect x="1150" y="430" width="320" height="120" fill="#20242c"/>
+    <line x1="1310" y1="430" x2="1310" y2="550" stroke="#11141a" stroke-width="3"/>
+    <circle cx="1290" cy="490" r="5" fill="#3f6d93"/>
+    <circle cx="1330" cy="490" r="5" fill="#3f6d93"/>
+    <!-- table + chairs silhouette -->
+    <ellipse cx="1300" cy="640" rx="150" ry="30" fill="#2a2e36"/>
+    <rect x="1230" y="640" width="10" height="60" fill="#15181d"/>
+    <rect x="1360" y="640" width="10" height="60" fill="#15181d"/>
+    <rect x="1250" y="580" width="50" height="70" rx="8" fill="#1c2026"/>
+    <rect x="1320" y="580" width="50" height="70" rx="8" fill="#1c2026"/>
+    <!-- vase -->
+    <path d="M1290 640 q-5 -34 8 -52 q13 18 8 52 z" fill="#3f6d93"/>
+  </g>
+
+  <!-- Soft ambient glow from windows over wall -->
+  <rect width="1600" height="900" fill="url(#dglow)"/>
+</svg>

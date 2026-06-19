@@ -1,0 +1,562 @@
+<!DOCTYPE html>
+<html lang="en">
+
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="theme-color" content="#25221d">
+  <meta name="description"
+    content="About Dubase Studio — an architecture and interior design practice in Lahore. One team, from structure to styling, since 2009.">
+  <title>Liag — About the Studio</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com/">
+  <link rel="preconnect" href="https://fonts.gstatic.com/" crossorigin>
+  <link
+    href="https://fonts.googleapis.com/css2?family=Fraunces:ital,opsz,wght@0,9..144,400;0,9..144,500;1,9..144,400&amp;family=Cormorant+Garamond:ital,wght@0,500;1,500&amp;family=Jost:wght@400;500&amp;family=JetBrains+Mono:wght@400;500&amp;display=swap"
+    rel="stylesheet">
+  <link rel="stylesheet" href="assets/css/root.css">
+  <link rel="stylesheet" href="assets/css/base.css">
+  <link rel="stylesheet" href="assets/css/components.css">
+  <link rel="stylesheet" href="assets/css/pages.css">
+  <link rel="stylesheet" href="assets/css/fx.css">
+</head>
+
+<body class="v-studio">
+  <a class="skip-link" href="#main">Skip to content</a>
+  <!-- ===================== AMBIENT BACKGROUND FX ===================== -->
+  <div class="fx-bg" aria-hidden="true">
+    <span class="fx-aurora"></span>
+    <span class="fx-orb fx-orb--1"></span>
+    <span class="fx-orb fx-orb--2"></span>
+    <span class="fx-orb fx-orb--3"></span>
+  </div>
+  <canvas class="fx-particles" aria-hidden="true"></canvas>
+  <div class="fx-grain" aria-hidden="true"></div>
+  <div class="fx-cursor" aria-hidden="true"></div>
+
+
+  <!-- ===================== NAV ===================== -->
+  <header class="nav" data-nav>
+    <div class="container nav__inner">
+      <a href="index.html" class="nav__brand">Liag<span class="nav__brand-dot" aria-hidden="true"></span></a>
+      <nav class="nav__menu" aria-label="Primary">
+        <a href="index.html">Studio</a>
+        <a href="projects.html">Projects</a>
+        <a href="services.html">Services</a>
+        <a href="about.html" aria-current="page">About</a>
+        <a href="blog.html">Journal</a>
+      </nav>
+      <div class="nav__actions">
+        <button class="nav__estimate" data-open-modal="estimator-modal">Quick estimate</button>
+        <button class="btn btn--primary" data-open-modal="inquiry-modal">Start a project</button>
+        <button class="nav__toggle" data-nav-toggle aria-label="Open menu" aria-expanded="false">
+          <span></span><span></span><span></span>
+        </button>
+      </div>
+    </div>
+  </header>
+
+  <div class="nav__drawer" data-nav-drawer>
+    <button class="nav__drawer-close" data-nav-close aria-label="Close menu">&times;</button>
+    <nav class="nav__drawer-menu" aria-label="Mobile">
+      <a href="index.html">Studio</a>
+      <a href="projects.html">Projects</a>
+      <a href="services.html">Services</a>
+      <a href="about.html" aria-current="page">About</a>
+      <a href="blog.html">Journal</a>
+    </nav>
+    <div class="nav__drawer-footer">
+      <button class="btn btn--outline btn--block" data-open-modal="estimator-modal"
+        style="margin-bottom:var(--s-3);">Quick estimate</button>
+      <button class="btn btn--primary btn--block" data-open-modal="inquiry-modal">Start a project</button>
+    </div>
+  </div>
+
+
+  <main id="main">
+
+    <!-- ===================== PAGE HEADER ===================== -->
+    <section class="pagehead">
+      <div class="container">
+        <p class="pagehead__crumbs"><a href="index.html">Home</a> &nbsp;/&nbsp; About</p>
+        <span class="pagehead__eyebrow">The studio</span>
+        <h1 class="pagehead__title">One team for the <em>whole</em> of a space.</h1>
+        <p class="pagehead__lead">Liag is an architecture and interior design studio in Lahore. We design buildings
+          and the lives inside them — and we believe those two things should never be drawn by different hands.</p>
+      </div>
+    </section>
+
+    <!-- ===================== INTRO / MANIFESTO ===================== -->
+    <section class="container section" style="padding-top:0;">
+      <div class="about-intro">
+        <aside class="about-intro__aside reveal">
+          <span class="eyebrow">Who we are</span>
+          <h2>A practice built around a single, stubborn idea.</h2>
+        </aside>
+        <div class="about-intro__rich reveal">
+          <p>Most projects pass through many hands. An architect draws the building, then walks away. An interior
+            designer inherits the result and works around it. A stylist arrives last to dress whatever's left. At every
+            handover, a little of the original intent leaks out.</p>
+          <p>We started Liag in 2009 to close those gaps. One team carries a project from the first structural sketch
+            to the last cushion placed — so the window sits where the light is needed, and the wall is where the sofa
+            wants to be.</p>
+          <p>Today we're a studio of twelve, working across homes, workplaces, and cultural spaces. We've grown, but the
+            idea hasn't changed.</p>
+        </div>
+      </div>
+
+      <!-- animated stats -->
+      <div class="about-stats reveal">
+        <div class="about-stat">
+          <div class="about-stat__num" data-count="16">0</div>
+          <div class="about-stat__label">Years practising</div>
+        </div>
+        <div class="about-stat">
+          <div class="about-stat__num" data-count="140" data-count-suffix="+">0</div>
+          <div class="about-stat__label">Projects delivered</div>
+        </div>
+        <div class="about-stat">
+          <div class="about-stat__num" data-count="12">0</div>
+          <div class="about-stat__label">In the studio</div>
+        </div>
+        <div class="about-stat">
+          <div class="about-stat__num" data-count="9">0</div>
+          <div class="about-stat__label">Design awards</div>
+        </div>
+      </div>
+    </section>
+
+    <!-- ===================== VALUES ===================== -->
+    <section class="section" style="background:var(--surface-alt);border-bottom:1px solid var(--rule-soft);">
+      <div class="container">
+        <div class="block-head reveal">
+          <span class="eyebrow">What we believe</span>
+          <h2 class="block-head__title">Three things we <span class="accent-word">won't compromise</span>.</h2>
+        </div>
+        <div class="values-grid">
+          <div class="value reveal">
+            <div class="value__num">01</div>
+            <h3 class="value__title">One studio, no handoffs</h3>
+            <p class="value__desc">The same team designs your building and its interior. Nothing gets lost in
+              translation between disciplines because there is no translation — it's one conversation.</p>
+          </div>
+          <div class="value reveal">
+            <div class="value__num">02</div>
+            <h3 class="value__title">The site leads</h3>
+            <p class="value__desc">We don't arrive with a house style to impose. Every project starts with its site, its
+              light, and the people who'll use it — the design follows from there.</p>
+          </div>
+          <div class="value reveal">
+            <div class="value__num">03</div>
+            <h3 class="value__title">Built to last</h3>
+            <p class="value__desc">Restraint over trend. We choose materials and details that age well, so a space still
+              feels considered a decade after we hand over the keys.</p>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- ===================== TEAM ===================== -->
+    <section class="section">
+      <div class="container">
+        <div class="block-head block-head--row reveal">
+          <div>
+            <span class="eyebrow">The people</span>
+            <h2 class="block-head__title">Who you'll <span class="accent-word">work with</span>.</h2>
+          </div>
+          <a href="contact.html" class="link-arrow">Join the studio
+            <svg width="14" height="10" viewBox="0 0 14 10" fill="none" aria-hidden="true">
+              <path d="M1 5h12M13 5L9 1M13 5L9 9" stroke="currentColor" stroke-width="1.4" />
+            </svg>
+          </a>
+        </div>
+        <div class="team-grid">
+          <div class="member reveal">
+            <div class="member__photo"><img src="assets/images/member-1.svg" alt=""></div>
+            <div class="member__name">Hira Asghar</div>
+            <div class="member__role">Principal Architect</div>
+          </div>
+          <div class="member reveal">
+            <div class="member__photo"><img src="assets/images/member-2.svg" alt=""></div>
+            <div class="member__name">Zain Khalid</div>
+            <div class="member__role">Head of Interiors</div>
+          </div>
+          <div class="member reveal">
+            <div class="member__photo"><img src="assets/images/member-3.svg" alt=""></div>
+            <div class="member__name">Mahnoor Riaz</div>
+            <div class="member__role">Project Lead</div>
+          </div>
+          <div class="member reveal">
+            <div class="member__photo"><img src="assets/images/member-4.svg" alt=""></div>
+            <div class="member__name">Farhan Siddiqui</div>
+            <div class="member__role">Design &amp; Styling</div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- ===================== SHOWCASE ===================== -->
+    <section class="showcase">
+      <!-- To use a real photo: replace src below with your image path (recommended 1600px wide). -->
+      <img class="showcase__img" data-swappable src="assets/images/arch-dark.svg"
+        alt="The studio's work — light, structure, and interior together">
+      <div class="showcase__veil"></div>
+      <div class="container showcase__inner reveal">
+        <span class="showcase__eyebrow">Our promise</span>
+        <h2 class="showcase__title">We hand over <em>finished spaces</em>, not loose ends.</h2>
+        <p class="showcase__text">From the first line to the final styling, your project stays with one team that knows
+          every decision behind it.</p>
+        <a href="projects.html" class="btn btn--primary btn--lg showcase__cta">
+          See our work
+          <svg width="14" height="10" viewBox="0 0 14 10" fill="none" aria-hidden="true">
+            <path d="M1 5h12M13 5L9 1M13 5L9 9" stroke="currentColor" stroke-width="1.4" />
+          </svg>
+        </a>
+      </div>
+    </section>
+
+    <!-- ===================== CTA BAND ===================== -->
+    <section class="cta-band">
+      <div class="container cta-band__inner reveal">
+        <div>
+          <h2 class="cta-band__title">Let's design something <span class="accent-word">lasting</span>.</h2>
+          <p class="cta-band__sub">Tell us about your project, or come say hello at the studio.</p>
+        </div>
+        <div class="cta-band__actions">
+          <button type="button" class="btn btn--primary btn--lg" data-open-modal="inquiry-modal">
+            Start a project
+            <svg width="14" height="10" viewBox="0 0 14 10" fill="none" aria-hidden="true">
+              <path d="M1 5h12M13 5L9 1M13 5L9 9" stroke="currentColor" stroke-width="1.4" />
+            </svg>
+          </button>
+          <a href="contact.html" class="btn btn--outline btn--lg"
+            style="border-color: rgba(240,236,228,0.4); color: var(--paper);">Contact us</a>
+        </div>
+      </div>
+    </section>
+
+  </main>
+  <!-- ===================== FOOTER ===================== -->
+  <footer class="footer">
+    <div class="container">
+      <div class="footer__top">
+        <div>
+          <div class="footer__brand">Liag<span class="footer__brand-dot" aria-hidden="true"></span></div>
+          <p class="footer__tagline">One studio for architecture and interiors — structure to styling, since 2009.</p>
+        </div>
+        <div>
+          <h4 class="footer__col-title">Studio</h4>
+          <ul class="footer__list">
+            <li><a href="about.html">About</a></li>
+            <li><a href="services.html">Services</a></li>
+            <li><a href="projects.html">Projects</a></li>
+            <li><a href="blog.html">Journal</a></li>
+          </ul>
+        </div>
+        <div>
+          <h4 class="footer__col-title">Connect</h4>
+          <ul class="footer__list">
+            <li><a href="contact.html">Contact</a></li>
+            <li><a href="estimate.html">Start a project</a></li>
+            <li><a href="#">Instagram</a></li>
+            <li><a href="#">LinkedIn</a></li>
+          </ul>
+        </div>
+        <div>
+          <h4 class="footer__col-title">Studio</h4>
+          <ul class="footer__list">
+            <li>12 Mall Road</li>
+            <li>Kerala, India</li>
+            <li>hello@liag.studio</li>
+            <li>+91 420 000 0000</li>
+          </ul>
+        </div>
+      </div>
+      <div class="footer__variants">
+        <a href="index.html">01 · Interior</a>
+        <a href="architecture.html">02 · Architecture</a>
+        <a href="studio.html">03 · Studio</a>
+        <a href="portfolio.html">04 · Portfolio</a>
+      </div>
+      <div class="footer__bottom">
+        <span>© <span data-year>2026</span> Dubase Studio</span>
+
+      </div>
+    </div>
+  </footer>
+
+
+  <!-- ===================== ESTIMATOR POPUP ===================== -->
+  <div class="modal" id="estimator-modal" aria-hidden="true">
+    <div class="modal__overlay" data-modal-close></div>
+    <div class="modal__panel" role="dialog" aria-modal="true" aria-label="Quick project estimate">
+      <button class="modal__close" data-modal-close aria-label="Close">&times;</button>
+      <div class="estimator" data-estimator>
+        <div class="estimator__progress" aria-hidden="true">
+          <span class="estimator__pip"></span><span class="estimator__pip"></span>
+          <span class="estimator__pip"></span><span class="estimator__pip"></span>
+        </div>
+        <div data-est-steps>
+          <div class="estimator__step is-active">
+            <span class="estimator__step-label">Step 01 / 04</span>
+            <h3 class="estimator__step-title">What do you <em>need</em>?</h3>
+            <div class="opt-grid opt-grid--2">
+              <label class="opt"><input type="radio" name="m-type" value="residential" data-est="type" checked><span
+                  class="opt__title">Architecture</span><span class="opt__desc">A building, from the ground
+                  up.</span></label>
+              <label class="opt"><input type="radio" name="m-type" value="commercial" data-est="type"><span
+                  class="opt__title">Interiors</span><span class="opt__desc">Design within an existing
+                  space.</span></label>
+              <label class="opt"><input type="radio" name="m-type" value="newbuild" data-est="type"><span
+                  class="opt__title">Both</span><span class="opt__desc">Building + interior, end to end.</span></label>
+              <label class="opt"><input type="radio" name="m-type" value="renovation" data-est="type"><span
+                  class="opt__title">Renovation</span><span class="opt__desc">Reworking what you already
+                  have.</span></label>
+            </div>
+          </div>
+          <div class="estimator__step">
+            <span class="estimator__step-label">Step 02 / 04</span>
+            <h3 class="estimator__step-title">How <em>large</em> is the space?</h3>
+            <div class="range-row">
+              <input type="range" min="300" max="15000" step="100" value="2000" data-est="area"
+                aria-label="Area in square feet">
+              <span class="range-val" data-est-area-label>2000 <span>sq ft</span></span>
+            </div>
+            <p class="estimator__step-label" style="margin-top: var(--s-6);">Scope of work</p>
+            <div class="opt-grid opt-grid--3" style="margin-top: var(--s-3);">
+              <label class="opt"><input type="radio" name="m-scope" value="consultation" data-est="scope"><span
+                  class="opt__title">Concept</span><span class="opt__price">From 25%</span></label>
+              <label class="opt"><input type="radio" name="m-scope" value="partial" data-est="scope"><span
+                  class="opt__title">Partial</span><span class="opt__price">From 65%</span></label>
+              <label class="opt"><input type="radio" name="m-scope" value="full" data-est="scope" checked><span
+                  class="opt__title">Full</span><span class="opt__price">End to end</span></label>
+            </div>
+          </div>
+          <div class="estimator__step">
+            <span class="estimator__step-label">Step 03 / 04</span>
+            <h3 class="estimator__step-title">What <em>finish</em> level?</h3>
+            <div class="opt-grid">
+              <label class="opt"><input type="radio" name="m-finish" value="essential" data-est="finish"><span
+                  class="opt__title">Considered</span><span class="opt__desc">Clean, durable, value-focused
+                  throughout.</span></label>
+              <label class="opt"><input type="radio" name="m-finish" value="premium" data-est="finish" checked><span
+                  class="opt__title">Premium</span><span class="opt__desc">Elevated materials, custom
+                  detailing.</span></label>
+              <label class="opt"><input type="radio" name="m-finish" value="luxury" data-est="finish"><span
+                  class="opt__title">Signature</span><span class="opt__desc">Bespoke throughout — landmark
+                  quality.</span></label>
+            </div>
+            <div class="estimate-readout">
+              <span class="estimate-readout__label">Estimated range</span>
+              <span class="estimate-readout__value" data-est-readout>—</span>
+            </div>
+          </div>
+          <div class="estimator__step">
+            <span class="estimator__step-label">Step 04 / 04</span>
+            <h3 class="estimator__step-title">Where do we <em>send</em> it?</h3>
+            <div class="stack">
+              <div class="field">
+                <label class="field__label" for="sm-name">Name <span class="req">*</span></label>
+                <input class="field__input" id="sm-name" type="text" required data-est="name" placeholder="Your name">
+                <span class="field-error">Please enter your name</span>
+              </div>
+              <div class="field">
+                <label class="field__label" for="sm-email">Email <span class="req">*</span></label>
+                <input class="field__input" id="sm-email" type="email" required data-est="email"
+                  placeholder="you@example.com">
+                <span class="field-error">Please enter a valid email</span>
+              </div>
+            </div>
+            <div class="estimate-readout">
+              <span class="estimate-readout__label">Your estimate</span>
+              <span class="estimate-readout__value" data-est-readout>—</span>
+            </div>
+          </div>
+        </div>
+        <div class="estimator__nav">
+          <button class="btn btn--ghost" data-est-prev>Back</button>
+          <button class="btn btn--primary" data-est-next>Continue</button>
+        </div>
+        <div class="estimator__success">
+          <div class="estimator__success-icon" aria-hidden="true">
+            <svg width="28" height="28" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5">
+              <polyline points="20 6 9 17 4 12" />
+            </svg>
+          </div>
+          <h3 class="estimator__step-title" style="margin-bottom: var(--s-3);">Request <em>received.</em></h3>
+          <p class="lead" style="margin-bottom: var(--s-5);">Your estimated range is <strong data-est-final>—</strong>.
+            We'll be in touch within one working day to talk through the details.</p>
+          <a href="projects.html" class="btn btn--dark">Meanwhile, see our work</a>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <script src="assets/js/main.js"></script>
+
+  <!-- ===================== PROJECT INQUIRY POPUP ===================== -->
+  <div class="modal" id="inquiry-modal" aria-hidden="true">
+    <div class="modal__overlay" data-modal-close></div>
+    <div class="modal__panel" role="dialog" aria-modal="true" aria-label="Start a project">
+      <button class="modal__close" data-modal-close aria-label="Close">&times;</button>
+      <div class="estimator" data-inquiry>
+        <div class="estimator__progress" aria-hidden="true">
+          <span class="estimator__pip"></span><span class="estimator__pip"></span>
+          <span class="estimator__pip"></span><span class="estimator__pip"></span>
+        </div>
+        <div data-inq-steps>
+          <div class="estimator__step is-active">
+            <span class="estimator__step-label">Step 01 / 04</span>
+            <h3 class="estimator__step-title">What can we <em>help</em> with?</h3>
+            <div class="opt-grid opt-grid--2">
+              <label class="opt"><input type="radio" name="i-type" value="architecture" data-inq="type" checked><span
+                  class="opt__title">Architecture</span><span class="opt__desc">A new building or
+                  extension.</span></label>
+              <label class="opt"><input type="radio" name="i-type" value="interior" data-inq="type"><span
+                  class="opt__title">Interior design</span><span class="opt__desc">Designing an existing
+                  space.</span></label>
+              <label class="opt"><input type="radio" name="i-type" value="both" data-inq="type"><span
+                  class="opt__title">Both</span><span class="opt__desc">Structure and interior together.</span></label>
+              <label class="opt"><input type="radio" name="i-type" value="consult" data-inq="type"><span
+                  class="opt__title">Consultation</span><span class="opt__desc">Advice or a second
+                  opinion.</span></label>
+            </div>
+          </div>
+          <div class="estimator__step">
+            <span class="estimator__step-label">Step 02 / 04</span>
+            <h3 class="estimator__step-title">Rough <em>budget</em>?</h3>
+            <div class="opt-grid opt-grid--2">
+              <label class="opt"><input type="radio" name="i-budget" value="lt50" data-inq="budget" checked><span
+                  class="opt__title">Under $50k</span></label>
+              <label class="opt"><input type="radio" name="i-budget" value="50-150" data-inq="budget"><span
+                  class="opt__title">$50k – $150k</span></label>
+              <label class="opt"><input type="radio" name="i-budget" value="150-500" data-inq="budget"><span
+                  class="opt__title">$150k – $500k</span></label>
+              <label class="opt"><input type="radio" name="i-budget" value="gt500" data-inq="budget"><span
+                  class="opt__title">$500k+</span></label>
+            </div>
+            <p class="estimator__step-label" style="margin-top:var(--s-6);">Timeline</p>
+            <div class="opt-grid opt-grid--3" style="margin-top:var(--s-3);">
+              <label class="opt"><input type="radio" name="i-time" value="asap" data-inq="timeline" checked><span
+                  class="opt__title">ASAP</span></label>
+              <label class="opt"><input type="radio" name="i-time" value="3-6m" data-inq="timeline"><span
+                  class="opt__title">3–6 months</span></label>
+              <label class="opt"><input type="radio" name="i-time" value="exploring" data-inq="timeline"><span
+                  class="opt__title">Exploring</span></label>
+            </div>
+          </div>
+          <div class="estimator__step">
+            <span class="estimator__step-label">Step 03 / 04</span>
+            <h3 class="estimator__step-title">Tell us <em>more</em>.</h3>
+            <div class="field">
+              <label class="field__label" for="i-msg">Project details</label>
+              <textarea class="field__input" id="i-msg" rows="5" data-inq="message"
+                placeholder="Location, size, what you have in mind..."></textarea>
+            </div>
+          </div>
+          <div class="estimator__step">
+            <span class="estimator__step-label">Step 04 / 04</span>
+            <h3 class="estimator__step-title">Where do we <em>reach</em> you?</h3>
+            <div class="stack">
+              <div class="field">
+                <label class="field__label" for="i-name">Name <span class="req">*</span></label>
+                <input class="field__input" id="i-name" type="text" required data-inq="name" placeholder="Your name">
+                <span class="field-error">Please enter your name</span>
+              </div>
+              <div class="field">
+                <label class="field__label" for="i-email">Email <span class="req">*</span></label>
+                <input class="field__input" id="i-email" type="email" required data-inq="email"
+                  placeholder="you@example.com">
+                <span class="field-error">Please enter a valid email</span>
+              </div>
+            </div>
+            <div class="estimate-readout">
+              <span class="estimate-readout__label">Your request</span>
+              <span class="estimate-readout__value" data-inq-summary
+                style="font-size:0.9rem;display:flex;gap:10px;flex-wrap:wrap;"></span>
+            </div>
+          </div>
+        </div>
+        <div class="estimator__nav">
+          <button class="btn btn--ghost" data-inq-prev>Back</button>
+          <button class="btn btn--primary" data-inq-next>Continue</button>
+        </div>
+        <div class="estimator__success">
+          <div class="estimator__success-icon" aria-hidden="true">
+            <svg width="28" height="28" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5">
+              <polyline points="20 6 9 17 4 12" />
+            </svg>
+          </div>
+          <h3 class="estimator__step-title" style="margin-bottom:var(--s-3);">Request <em>sent.</em></h3>
+          <p class="lead" style="margin-bottom:var(--s-5);">Thanks — we've got your project details and will be in touch
+            within one working day.</p>
+          <button class="btn btn--dark" data-modal-close>Close</button>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <!-- ===================== CUSTOMIZER PANEL (demo) ===================== -->
+  <aside class="customizer" data-customizer aria-label="Theme customizer">
+    <button class="customizer__toggle" data-cz-toggle aria-label="Customize theme">
+      <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6">
+        <circle cx="12" cy="12" r="3" />
+        <path d="M12 1v4M12 19v4M4.2 4.2l2.8 2.8M17 17l2.8 2.8M1 12h4M19 12h4M4.2 19.8l2.8-2.8M17 7l2.8-2.8" />
+      </svg>
+    </button>
+    <div class="customizer__body" data-cz-body>
+      <p class="customizer__title">Accent colour</p>
+      <div class="customizer__row">
+        <div class="customizer__swatches">
+          <button class="cz-swatch" data-cz-accent="#2f6fb0" data-cz-accent-deep="#245a93" style="background:#2f6fb0"
+            aria-label="Azure"></button>
+          <button class="cz-swatch" data-cz-accent="#b5622f" data-cz-accent-deep="#944c22" style="background:#b5622f"
+            aria-label="Clay"></button>
+          <button class="cz-swatch" data-cz-accent="#9c6b43" data-cz-accent-deep="#7e5433" style="background:#9c6b43"
+            aria-label="Bronze"></button>
+          <button class="cz-swatch" data-cz-accent="#5e7c5a" data-cz-accent-deep="#4a6347" style="background:#5e7c5a"
+            aria-label="Sage"></button>
+          <button class="cz-swatch" data-cz-accent="#8a5a7a" data-cz-accent-deep="#6f4762" style="background:#8a5a7a"
+            aria-label="Plum"></button>
+          <button class="cz-swatch" data-cz-accent="#3f3f46" data-cz-accent-deep="#2c2c31" style="background:#3f3f46"
+            aria-label="Graphite"></button>
+        </div>
+      </div>
+      <p class="customizer__title">Appearance</p>
+      <div class="customizer__row">
+        <button class="customizer__dark" data-cz-dark>
+          <span data-cz-dark-label>Dark mode</span>
+          <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6">
+            <path d="M21 12.8A9 9 0 1111.2 3 7 7 0 0021 12.8z" />
+          </svg>
+        </button>
+      </div>
+      <p class="customizer__title">Header</p>
+      <div class="customizer__row">
+        <button class="customizer__dark" data-cz-sticky>
+          <span data-cz-sticky-label>Sticky header</span>
+          <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6">
+            <path d="M4 6h16M4 12h16M4 18h10" />
+          </svg>
+        </button>
+      </div>
+      <p class="customizer__title">Demo images</p>
+      <div class="customizer__row">
+        <button class="customizer__dark" data-imgswap-toggle>
+          <span data-imgswap-label>Try your images</span>
+          <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6">
+            <path d="M21 15v4a2 2 0 01-2 2H5a2 2 0 01-2-2v-4" />
+            <polyline points="17 8 12 3 7 8" />
+            <line x1="12" y1="3" x2="12" y2="15" />
+          </svg>
+        </button>
+      </div>
+      <p class="customizer__note">Live demo — shows how easily the theme recolours. Set defaults in root.css.</p>
+    </div>
+  </aside>
+
+
+</body>
+
+
+</html>
