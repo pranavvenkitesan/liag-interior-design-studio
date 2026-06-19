@@ -1095,6 +1095,7 @@
    CUSTOMIZER PANEL (demo feature — live accent + dark mode)
    ============================================================ */
 .customizer {
+  display: none !important;
   position: fixed;
   right: 0;
   top: 90px;
